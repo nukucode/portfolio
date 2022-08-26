@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+
+
+
+.btn {
+  @apply bg-gray-800/50  rounded-md text-sm p-2 flex items-center space-x-2 transition-all duration-200 hover:bg-gray-700 hover:animate-pulse shadow-xl;
+}
+
+.MuiSvgIcon-root {
+  font-size: 20px;
+  color: #3ccf91;
+}
+
+
+.point{
+  color: #3ccf91;
+}
+
+.point:hover{
+  @apply animate-pulse
+}
+
+.dot{
+  @apply relative
+}
+
+.dot::before{
+ content: '';
+ position: absolute;
+ top: 5px;
+ left: -19px;
+ width: 6px;
+ height: 6px;
+ border-radius: 50%;
+ background: rgb(136, 133, 133);
+}
+
+.input{
+  @apply bg-transparent border-none outline-none w-full h-full
+}
+
+.search{
+  @apply border border-gray-500/60 max-w-[450px] h-[45px] rounded-md shadow-xl px-3 bg-gray-900/20 flex items-center
+}
+
+.top{
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none
+}
