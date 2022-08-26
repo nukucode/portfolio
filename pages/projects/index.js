@@ -14,6 +14,7 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
+import Other from "../../Components/Other";
 function index({ result }) {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
@@ -22,7 +23,6 @@ function index({ result }) {
     setData(JSON.parse(result));
   }, [result]);
 
-  console.log(data);
 
   const Search = data.filter((data) => {
     if (data === "") {
@@ -72,12 +72,12 @@ function index({ result }) {
         />
       </Head>
       <div className="bg-black">
-        <div className=" text-white max-w-7xl space-y-5 mx-auto mb-5 px-5  sm:px-10">
+        <div className=" text-white max-w-7xl space-y-5 mx-auto  sm:px-10">
           <Header />
           <div className="space-y-5 px-5 border-b border-gray-800 pb-5">
             <Fade left>
               <div>
-                <h1 className="text-[4vw] font-extrabold">Projects</h1>
+                <h1 className="md:text-[4vw] text-[2rem] mb-3 font-extrabold">Projects</h1>
                 <p className="text-gray-400 max-w-2xl">
                   I love building projects and practice my engineering skills,
                   here's an archive of things that I've worked on
@@ -97,7 +97,7 @@ function index({ result }) {
               </div>
             </Fade>
           </div>
-          <div className="max-w-7xl mx-auto pb-5 grid grid-cols-1 md:grid-cols-2 gap-5 px-5">
+          <div className="pb-5 grid grid-cols-1 md:grid-cols-2 gap-5 px-5">
             {Search &&
               Search.map((data) => (
                 <Project
@@ -114,6 +114,7 @@ function index({ result }) {
               ))}
           </div>
           <Footer />
+          <Other />
         </div>
       </div>
     </>

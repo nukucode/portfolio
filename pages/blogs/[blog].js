@@ -5,7 +5,6 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 function Blog({ result }) {
-  console.log(result);
 
   const [data, setData] = useState([]);
 
@@ -13,7 +12,6 @@ function Blog({ result }) {
     setData(JSON.parse(result));
   }, [result]);
 
-  console.log(data);
 
   function prettyDate(date) {
     var months = [
@@ -56,7 +54,7 @@ function Blog({ result }) {
               <h1 className=" text-[1.8rem] md:text-[2.5rem] max-w-[600px] font-extrabold">
                 {data?.title}
               </h1>
-              <div className="flex items-center justify-between">
+              <div className="flex  sm:flex-row flex-col sm:items-center sm:justify-between space-y-4 ">
                 <div className="flex items-center space-x-3">
                   <Image
                     src={data?.author_img}
@@ -82,7 +80,7 @@ function Blog({ result }) {
                 <Image src={data.img} objectFit="contain"  width={900} height={700} alt={data.title}  className="border rounded-md border-gray-400 shadow-2xl" />
               </div>
 
-              <div className="pb-5 leading-8 text-gray-400">
+              <div className="pb-5 leading-8 capitalize  text-gray-400">
                 {
                   data.description
                 }

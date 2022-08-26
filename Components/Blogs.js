@@ -17,9 +17,9 @@ function Blogs() {
   );
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-[10rem]">
-        <div className="space-y-3 flex items-center justify-between px-5 pb-[2rem]">
-          <h3 className="font-bold text-lg md:text-2xl">📰 Latest Article.</h3>
+      <div className=" mt-[10rem]">
+        <div className="space-y-3 flex sm:items-center sm:flex-row justify-between px-5 pb-[2rem] flex-col">
+          <h3 className="font-bold text-md  sm:text-lg md:text-2xl">📰 Latest Article.</h3>
           <div>
             <Link href="/blogs" passHref  className="point">
            <a>   Read all articles <ChevronRightIcon /></a>
@@ -27,7 +27,7 @@ function Blogs() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-[5rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-[5rem] px-3">
           {blogs.map((blog) => (
             <Blog
               title={blog.data().title}

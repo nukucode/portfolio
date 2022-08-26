@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Box from "./Box";
 import Fade from "react-reveal/Fade";
-import Link from 'next/link'
+import Link from "next/link";
 function About() {
   return (
     <>
       <Fade top>
         <div>
-          <div className="max-w-7xl px-5  mx-auto flex items-center justify-between flex-col md:flex-row space-y-10">
+          <div className="max-w-7xl px-5  mx-auto  flex items-center justify-between flex-col md:flex-row space-y-10">
             <div className="space-y-4 max-w-2xl">
               <h1 className="text-2xl font-bold">⚡ About Me</h1>
               <p className="text-gray-400 text-[15px]">
@@ -27,7 +27,6 @@ function About() {
                 technologies, and had the privilege to worked in a
                 <span className="inline-block px-2 point">
                   <Link href="/">
-                    
                     <a target="_blank" rel="noopener noreferrer">
                       B2 Company
                     </a>
@@ -36,16 +35,18 @@ function About() {
                 and a
                 <span className="point">
                   <Link href="/">
-                    
-                    <a target="_blank" rel="noopener noreferrer">
-                      
+                    <a
+                      target="_blank"
+                      className="px-2"
+                      rel="noopener noreferrer"
+                    >
                       Recruitment Company
                     </a>
                   </Link>
                 </span>
                 I'm interested in building something awesome with code and
                 automate tasks with code, currently focused on
-                <span className="inline-block px-2">
+                <span className="inline sm:inline-block px-2">
                   <Box
                     name="Web or  App Devlopment"
                     more="Building Web and Mobile Applications using Javascript Frameworks (React, React Native and Next.js)"

@@ -1,21 +1,11 @@
 import React, { useEffect, useState } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 function Other() {
-  const [btn, setBtn] = useState(false);
+  const [btn, setBtn] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (this.window.pageYOffset >= 80) {
-        setBtn(true);
-      } else {
-        setBtn(false);
-      }
-    });
-  }, []);
+  
 
-  if (typeof window !== "undefined") {
-    // Client-side-only code
-  }
+ 
 
   return (
     <>

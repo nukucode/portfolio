@@ -3,9 +3,9 @@ import Head from "next/head";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import Blog from '../../Components/Blog'
+import Blog from "../../Components/Blog";
 import { db } from "../../firebaseConfig/Firebase";
-import Fade from 'react-reveal/Fade'
+import Fade from "react-reveal/Fade";
 import {
   collection,
   getDocs,
@@ -13,6 +13,7 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
+import Other from "../../Components/Other";
 function Index({ result }) {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
@@ -71,37 +72,48 @@ function Index({ result }) {
         />
       </Head>
       <div className="bg-black">
-        <div className=" text-white max-w-7xl space-y-5 mx-auto mb-5 px-5  sm:px-10">
+        <div className=" text-white max-w-7xl space-y-5 mx-auto  sm:px-10">
           <Header />
           <div className="space-y-5 px-5 border-b border-gray-800 pb-5">
-          <Fade left>
-          <div className="max-w-7xl">
-              <h1 className="text-[4vw] font-extrabold">Articles</h1>
-              <p className="text-gray-400 max-w-2xl">
-                This is where I share my writings on programming, tutorials, and
-                my experiences.
-              </p>
-            </div>
-          </Fade>
+            <Fade left>
+              <div className="max-w-7xl">
+                <h1 className="sm:text-[4vw] text-[2rem]  font-extrabold">
+                  Articles
+                </h1>
+                <p className="text-gray-400 max-w-2xl">
+                  This is where I share my writings on programming, tutorials,
+                  and my experiences.
+                </p>
+              </div>
+            </Fade>
             <Fade top>
-            <div className="search">
-              <input
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="search projects"
-                className="input"
-              />
-              <SearchOutlinedIcon />
-            </div>
+              <div className="search">
+                <input
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="search projects"
+                  className="input"
+                />
+                <SearchOutlinedIcon />
+              </div>
             </Fade>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-[5rem]">
-            {Search && Search.map((data) => (
-                <Blog timestamp={data.timestamp} id={data.id} key={data.id} title={data.title} description={data.description} index  />
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-[5rem] px-3">
+            {Search &&
+              Search.map((data) => (
+                <Blog
+                  timestamp={data.timestamp}
+                  id={data.id}
+                  key={data.id}
+                  title={data.title}
+                  description={data.description}
+                  index
+                />
+              ))}
           </div>
           <Footer />
+          <Other />
         </div>
       </div>
     </>

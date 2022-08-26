@@ -11,9 +11,9 @@ function HomePage() {
       <Fade left collapse>
         <div className="flex items-center  h-[85vh]">
           <div className="flex flex-col space-y-7 px-5  max-w-7xl sm:pl-10 lg:pl-[9rem]">
-            <div className=" relative -mb-8">
+            <div className=" relative -mb-4 md:-mb-8">
               <Roll left>
-                <span className="text-[#3CCF91] text-xl  font-bold absolute md:-top-4 -top-6 -left-2 rotate-6">
+                <span className="text-[#3CCF91] text-lg  md:text-xl left-0  font-bold absolute md:-top-4 md:-left-2 -top-7 rotate-6">
                   Hey there!, I'm
                 </span>
               </Roll>
@@ -22,9 +22,9 @@ function HomePage() {
               </h1>
             </div>
             <Fade bottom>
-              <p className="font-bold text-xl  md:text-2xl max-w-2xl">
+              <p className="font-bold text-lg sm:text-xl  md:text-2xl max-w-2xl">
                 Software Enginner.
-                <span className="text-gray-100">
+                <span className="text-gray-200">
                   A self-taught devloper with an interest in
                 </span>
                 <span> Computer Science</span>
@@ -43,7 +43,7 @@ function HomePage() {
                 .
               </p>
             </div>
-            <div className="flex  space-x-5 md:space-x-6 flex-wrap gap-y-6">
+            <div className="flex  space-x-5 md:space-x-6  flex-wrap  gap-y-6">
               <Link href="https://github.com/therogersak">
                 <a target="_blank" rel="noopener noreferrer">
                   <button className="btn">

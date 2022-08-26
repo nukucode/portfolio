@@ -18,12 +18,11 @@ function Projects() {
   );
 
 
-  console.log(projects)
 
   return (
     <>
       <div className="">
-        <div className="flex  justify-between md:flex-col mt-[8rem] my-[2rem] max-w-7xl mx-auto px-5">
+        <div className="flex  justify-between md:flex-row flex-col space-y-5 mt-[8rem] my-[2rem] px-5">
           <div className="space-y-3">
             <h3 className="font-bold text-lg md:text-2xl">
               All Creative Works
