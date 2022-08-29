@@ -10,7 +10,7 @@ function HomePage() {
     <>
       <Fade left collapse>
         <div className="flex items-center  h-[85vh]">
-          <div className="flex flex-col space-y-7 px-5  max-w-7xl sm:pl-10 lg:pl-[9rem]">
+          <div className="flex flex-col space-y-7 px-5  sm:pl-10 lg:pl-[9rem]">
             <div className=" relative -mb-4 md:-mb-8">
               <Roll left>
                 <span className="text-[#3CCF91] text-lg  md:text-xl left-0  font-bold absolute md:-top-4 md:-left-2 -top-7 rotate-6">
@@ -36,7 +36,11 @@ function HomePage() {
               <p>
                 💻 Currently building Unsplash Clone
                 <Link href="/">
-                  <a target="_blank" rel="noopener noreferrer"  className=" bg-gradient-to-r from-orange-500 to-[#3CCF91] text-transparent bg-clip-text  font-bold pl-2">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-gradient-to-r from-orange-500 to-[#3CCF91] text-transparent bg-clip-text  font-bold pl-2"
+                  >
                     Click Here
                   </a>
                 </Link>

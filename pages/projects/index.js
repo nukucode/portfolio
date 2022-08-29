@@ -7,22 +7,15 @@ import Head from "next/head";
 import { db } from "../../firebaseConfig/Firebase";
 import Fade from "react-reveal/Fade";
 
-import {
-  collection,
-  getDocs,
-  onSnapshot,
-  orderBy,
-  query,
-} from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Other from "../../Components/Other";
-function index({ result }) {
+function Projects({ result }) {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
 
   useEffect(() => {
     setData(JSON.parse(result));
   }, [result]);
-
 
   const Search = data.filter((data) => {
     if (data === "") {
@@ -34,6 +27,8 @@ function index({ result }) {
       );
     }
   });
+
+  // hulu bhi ji clone open trror open to you tuber strone ponition royal royal 59gjj 459786834 boy girls
   return (
     <>
       <Head>
@@ -77,7 +72,9 @@ function index({ result }) {
           <div className="space-y-5 px-5 border-b border-gray-800 pb-5">
             <Fade left>
               <div>
-                <h1 className="md:text-[4vw] text-[2rem] mb-3 font-extrabold">Projects</h1>
+                <h1 className="md:text-[4vw] text-[2rem] mb-3 font-extrabold">
+                  Projects
+                </h1>
                 <p className="text-gray-400 max-w-2xl">
                   I love building projects and practice my engineering skills,
                   here's an archive of things that I've worked on
@@ -121,7 +118,7 @@ function index({ result }) {
   );
 }
 
-export default index;
+export default Projects;
 
 export async function getServerSideProps() {
   const colRef = collection(db, "projects");

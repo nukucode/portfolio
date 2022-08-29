@@ -6,13 +6,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import Blog from "../../Components/Blog";
 import { db } from "../../firebaseConfig/Firebase";
 import Fade from "react-reveal/Fade";
-import {
-  collection,
-  getDocs,
-  onSnapshot,
-  orderBy,
-  query,
-} from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Other from "../../Components/Other";
 function Index({ result }) {
   const [data, setData] = useState([]);
