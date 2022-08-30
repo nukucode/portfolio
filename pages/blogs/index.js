@@ -30,39 +30,39 @@ function Index({ result }) {
   });
   return (
     <>
-      <Head>
+       <Head>
         <title>therogersak - Software Engineer</title>
         <meta name="title" content="therogersak - Software Engineer" />
         <meta
           name="description"
-          content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
+          content="Software Engineer based in India, an undergraduate student at Self."
         />
 
         <meta property="og:type" content="website" />
-        {/* <meta property="og:url" content="https://abdulrahman.id/projects" /> */}
+        <meta property="og:url" content="https://therogersak.netlify.app/blogs" />
         <meta property="og:title" content="therogersak - Software Engineer" />
         <meta
           property="og:description"
-          content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
+          content="Software Engineer based in India, an undergraduate student at Self."
         />
-        <meta property="og:image" content="https://i.imgur.com/AOMvmeJ.png" />
+        <meta property="og:image" content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        {/* <meta
+        <meta
           property="twitter:url"
-          content="https://abdulrahman.id/projects"
-        /> */}
+          content="https://therogersak.netlify.app/blogs"
+        />
         <meta
           property="twitter:title"
           content="therogersak - Software Engineer"
         />
         <meta
           property="twitter:description"
-          content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
+          content="Software Engineer based in India, an undergraduate student at Self."
         />
         <meta
           property="twitter:image"
-          content="https://i.imgur.com/AOMvmeJ.png"
+          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
         />
       </Head>
       <div className="bg-black">

@@ -6,7 +6,6 @@ import Project from "./Project";
 import Link from 'next/link'
 function Projects() {
   const [projects, setprojects] = useState();
-  const [data, setData] = useState([])
 
   useEffect(
     () =>

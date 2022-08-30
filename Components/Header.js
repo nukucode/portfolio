@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../asest/logoo.png";
 import Link from "next/link";
-import { MenuIcon } from "@heroicons/react/outline";
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import Fade from "react-reveal/Fade";
 
 function Header() {
@@ -50,7 +50,7 @@ function Header() {
                 </Link>
               </ul>
               <div onClick={() => setToggle(!toggle)}>
-                <MenuIcon className="h-8 block sm:hidden z-[1100]  text-white cursor-pointer" />
+                <MenuOutlinedIcon  className=" menu block sm:hidden z-[1100]  text-white cursor-pointer" />
               </div>
             </div>
           </div>

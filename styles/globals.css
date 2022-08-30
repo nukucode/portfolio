@@ -98,3 +98,8 @@ body {
 .layer_show {
   display: block;
 }
+
+
+.menu{
+  font-size: 40px;
+}

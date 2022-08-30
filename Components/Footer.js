@@ -1,9 +1,9 @@
-import Roll from "react-reveal/Roll";
+import Fade from  "react-reveal/Fade";
 import Link from "next/link";
 function Footer() {
   return (
     <>
-      <Roll left>
+      <Fade bottom >
         <div>
           <div className="max-w-[400px] leading-6 text-sm text-gray-400 pb-5 mx-auto text-center">
             <p>
@@ -19,7 +19,7 @@ function Footer() {
             </p>
           </div>
         </div>
-      </Roll>
+      </Fade>
     </>
   );
 }

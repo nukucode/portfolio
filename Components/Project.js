@@ -15,8 +15,13 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import { SiNextDotJs } from "react-icons/si";
-import Fade from "react-reveal/Fade";
 import Link from "next/link";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+const animationConfiguration = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+};
 function Project({
   img1,
   id,
@@ -70,56 +75,60 @@ function Project({
 
   return (
     <>
-      <Fade bottom>
-        <div>
-          <div className="max-w-2xl overflow-x-scroll  h-auto borderbg-slate-900 rounded-lg sm:px-6 px-2 sm:py-8 py-2 ring-1 ring-slate-800 bg-slate-900/30 shadow-xl">
-            <div>
-              <Image
-                src={img1}
-                alt={title}
-                width={1000}
-                height={550}
-                objectFit="contain"
-              />
+      <motion.div  variants={animationConfiguration}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={{ duration: 3 }}>
+        <div className="max-w-2xl overflow-x-scroll  h-auto borderbg-slate-900 rounded-lg sm:px-6 px-2 sm:py-8 py-2 ring-1 ring-slate-800 bg-slate-900/30 shadow-xl">
+          <div>
+            <Image
+              src={img1}
+              alt={title}
+              width={1000}
+              height={550}
+              objectFit="contain"
+            />
+          </div>
+          <div className="space-y-3 px-3">
+            <div className="flex items-center justify-between flex-col gap-3 sm:flex-row my-2">
+              <h1 className="font-bold text-md  sm:text-lg">{title}</h1>
+              <div className="space-x-5 mb-3">
+                <Link href={`${github}`} passHref>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <GitHubIcon />
+                  </a>
+                </Link>
+                <Link href={`${demo}`} passHref>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <LaunchIcon />
+                  </a>
+                </Link>
+              </div>
             </div>
-            <div className="space-y-3 px-3">
-              <div className="flex items-center justify-between flex-col gap-3 sm:flex-row my-2">
-                <h1 className="font-bold text-md  sm:text-lg">{title}</h1>
-                <div className="space-x-5 mb-3">
-                  <Link href={`${github}`} passHref>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <GitHubIcon />
-                    </a>
-                  </Link>
-                  <Link href={`${demo}`} passHref>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <LaunchIcon />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="flex items-center space-x-5 overflow-x-scroll scrollbar-hide">
-                {tag &&
-                  tag.map((name, i) => (
-                    <div
-                      key={i}
-                      style={{
-                        background: `${getTag(name)[0]}50`,
-                        color: `${getTag(name)[0]}`,
-                      }}
-                      className="px-2 space-x-2 whitespace-nowrap w-fit  py-1 rounded-md shadow-xl "
-                    >
-                      <span className="text-sm">{name}</span>
-                    </div>
-                  ))}
-              </div>
-              <div className="border-t border-gray-800 pt-2">
-                <p className="text-gray-400 text-[15px] sm:text-lg capitalize ">{description}.</p>
-              </div>
+            <div className="flex items-center space-x-5 overflow-x-scroll scrollbar-hide">
+              {tag &&
+                tag.map((name, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      background: `${getTag(name)[0]}50`,
+                      color: `${getTag(name)[0]}`,
+                    }}
+                    className="px-2 space-x-2 whitespace-nowrap w-fit  py-1 rounded-md shadow-xl "
+                  >
+                    <span className="text-sm">{name}</span>
+                  </div>
+                ))}
+            </div>
+            <div className="border-t border-gray-800 pt-2">
+              <p className="text-gray-400 text-[15px] sm:text-lg capitalize ">
+                {description}.
+              </p>
             </div>
           </div>
         </div>
-      </Fade>
+      </motion.div>
     </>
   );
 }

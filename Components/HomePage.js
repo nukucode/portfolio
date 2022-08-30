@@ -22,11 +22,11 @@ function HomePage() {
   };
   return (
     <>
-      <Fade left collapse>
+      <Fade bottom collapse>
         <div className="flex items-center  h-[85vh]">
           <div className="flex flex-col space-y-7 px-5  sm:pl-10 lg:pl-[9rem]">
             <div className=" relative -mb-4 md:-mb-8">
-              <Roll left>
+              <Roll bottom>
                 <span className="text-[#3CCF91] text-lg  md:text-xl left-0  font-bold absolute md:-top-4 md:-left-2 -top-7 rotate-6">
                   Hey there!, I'm
                 </span>
@@ -38,7 +38,7 @@ function HomePage() {
             <Fade bottom>
               <p className="font-bold text-lg sm:text-xl  md:text-2xl max-w-2xl">
                 Software Enginner.
-                <span className="text-gray-200">
+                <span className="text-gray-400">
                   A self-taught devloper with an interest in
                 </span>
                 <span> Computer Science</span>

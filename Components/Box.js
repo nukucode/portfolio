@@ -1,9 +1,8 @@
-import Fade from "react-reveal/Fade";
 
 function Box({ name, more }) {
   return (
     <>
-      <Fade bottom>
+
       <div className="group relative  cursor-pointer">
         <div className="flex items-center">
           <p className="point">{name}</p>
@@ -12,7 +11,7 @@ function Box({ name, more }) {
           <p className="text-sm select-none  text-gray-200  z-[1100] bg-black  cursor-none">{more}</p>
         </div>
       </div>
-      </Fade>
+
     </>
   );
 }
