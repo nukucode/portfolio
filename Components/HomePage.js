@@ -1,11 +1,25 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import Fade from "react-reveal/Fade";
 import Roll from "react-reveal/Roll";
 import Link from "next/link";
 
 function HomePage() {
+  const share = () => {
+    const data = {
+      title: "therogersak",
+      text: "Connect With Ankit Yadav To Learn These Skills  Development, Ethical Hacking, Programing, Coding, Make  Genius",
+      url: "https://www.therogersak.com",
+    };
+
+    if (navigator.canShare && navigator.canShare(data)) {
+      navigator.share(data);
+    } else {
+      alert("bsdk");
+    }
+  };
   return (
     <>
       <Fade left collapse>
@@ -51,24 +65,32 @@ function HomePage() {
               <Link href="https://github.com/therogersak">
                 <a target="_blank" rel="noopener noreferrer">
                   <button className="btn">
-                    <GitHubIcon /> <span>Github</span>
+                    <GitHubIcon />
+                    <span className="hidden sm:block">Github</span>
                   </button>
                 </a>
               </Link>
               <Link href="https://linkedin.com/in/therogersak">
                 <a target="_blank" rel="noopener noreferrer">
                   <button className="btn">
-                    <LinkedInIcon /> <span>Linkedin</span>
+                    <LinkedInIcon />
+                    <span className="hidden sm:block">Linkedin</span>
                   </button>
                 </a>
               </Link>
               <Link href="https://instagram.com/therogersak">
                 <a target="_blank" rel="noopener noreferrer">
                   <button className="btn">
-                    <InstagramIcon /> <span>Instagram</span>
+                    <InstagramIcon />
+                    <span className="hidden sm:block">Instagram</span>
                   </button>
                 </a>
               </Link>
+
+              <button className="btn" onClick={() => share()}>
+                <ShareOutlinedIcon />{" "}
+                <span className="hidden sm:block">Share</span>
+              </button>
             </div>
           </div>
         </div>

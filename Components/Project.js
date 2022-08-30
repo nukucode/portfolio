@@ -83,9 +83,9 @@ function Project({
               />
             </div>
             <div className="space-y-3 px-3">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between flex-col gap-3 sm:flex-row my-2">
                 <h1 className="font-bold text-md  sm:text-lg">{title}</h1>
-                <div className="space-x-5">
+                <div className="space-x-5 mb-3">
                   <Link href={`${github}`} passHref>
                     <a target="_blank" rel="noopener noreferrer">
                       <GitHubIcon />

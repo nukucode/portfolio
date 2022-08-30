@@ -46,15 +46,16 @@ function Blog({ result }) {
   };
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black w-full">
+      <div className=" max-w-7xl mx-auto px-5">
         <Header />
-        <div className="max-w-4xl mt-[5rem] mx-auto text-white px-5 sm:px-10">
+        <div className="max-w-4xl mt-[5rem] mx-auto text-white ">
           {data.map((data,i) => (
             <div className="space-y-5" key={i}>
               <h1 className=" text-[1.8rem] md:text-[2.5rem] max-w-[600px] font-extrabold">
                 {data?.title}
               </h1>
-              <div className="flex  sm:flex-row flex-col sm:items-center sm:justify-between space-y-4 ">
+              <div className=" ">
                 <div className="flex items-center space-x-3">
                   <Image
                     src={data?.author_img}
@@ -65,14 +66,15 @@ function Blog({ result }) {
                     objectFit="cover"
                   />
 
-                  <p className="text-gray-400 text-sm">
+                 <div className="flex flex-col sm:space-x-10  sm:flex-row">
+                 <p className="text-gray-400  text-sm">
                     <span>{data?.author} /</span>
                     <span>{prettyDate(new Date(data.timestamp))}</span>
                   </p>
-                </div>
-
-                <div className="text-sm text-gray-300">
+                  <div className="text-sm text-gray-300">
                   {readTime(data.description)} min read
+                </div>
+                 </div>
                 </div>
               </div>
 
@@ -89,6 +91,8 @@ function Blog({ result }) {
           ))}
         </div>
         <Footer />
+      </div>
+
       </div>
     </>
   );
