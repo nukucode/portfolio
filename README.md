@@ -1,40 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![](https://github.com/therogersak/portfolie-using-next-js/blob/main/portfolio.png?raw=true)
 
-## Getting Started
+---
 
-First, run the development server:
+## ⚡ therogersak
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I've decided to open-source my latest portfolio website! it has dynamic content management to add projects and posts using Contentful CMS, and was built using Next.js and Chakra UI.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Refer to [Next.js](https://nextjs.org/docs/) and [Tailwind Css](https://tailwindcss.com/) documentation to learn more.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Feel free to fork this repository to make your own portfolio, and if you liked the repo, kindly support it by giving it a star ⭐!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🛠 Get started
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+<details>
+<summary>Contentful API Keys</summary>
+<p>
+<br>
+1. Create a <a href="https://www.contentful.com/sign-up/">Contentful</a> account <br>
+2. Add a Community Space (It's free!)  <br>
+3. Choose "I create content"  <br>
+4. Go to content model and start to add content type  <br>
 
-To learn more about Next.js, take a look at the following resources:
+> 📌  In this portfolio website, it has 5 Content type which is:
+> 1. BlogPosts
+> 2. FeaturedProjects
+> 3. Projects
+> 4. Introduction
+> 5. ContactMe
+> 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+6. Go to settings -> API Keys -> Content Delivery / Preview tokens -> "Your space name"
+copy the Space ID and Content Delivery API access token  <br>
+7. Put it into the environment variables according to `.env.example` and you're all set! <br>
+</p>
+</details>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<details>
+<summary>Firebase API Keys</summary>
+<p>
+  <br>
+  1. Create a <a href="https://console.firebase.google.com/">Firebase</a> project <br>
+2. After setting things up you'll get the API keys, save those. <br>
+3. Go to Firestore Database <br>
+4. Add a collection named <code>views</code> <br>
+  5. Then, put those API Keys before according to the <code>.env.example</code> and that's it!<br> 
+</p>
+</details>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# portfolie-using-next-js
-# portfolie-using-next-js
-# portfolie-using-next-js
-# portfolie-using-next-js
-# portfolie-using-next-js
-# portfolie
+
+
+### Starting the Project
+Install the dependencies with `npm i` or `yarn`  
+Start the project by `npm run dev` or `yarn dev`  
+  
+### Deployment
+You can deploy easily by using [Netlify](https://netlify.com/) 🎉  
+  
+[![Deploy with Netlify](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fabdulrcs%2Fabdulrahman.id)
+
+## 📌 Overview
+`pages/index.js` = Homepage  
+`pages/projects/index.js` = Projects archive page  
+`pages/blog/index.js` = Blog listings page  
+`pages/blog/[slug].js` = Blog post page   
+
+## ⚙ Tech Stack
+- Next.js
+- Firebase
+- Tailwind Css
+- React Reveal
+- Mui Icons
+
