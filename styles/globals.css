@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +46,7 @@ html {
 }
 
 .search {
-  @apply border border-gray-500/60 max-w-[450px] h-[45px] rounded-md shadow-xl px-3 bg-gray-900/20 flex items-center ;
+  @apply border border-gray-500/60 max-w-[450px] h-[45px] rounded-md shadow-xl px-3 bg-gray-900/20 flex items-center;
 }
 
 .top {
@@ -58,7 +59,7 @@ html {
   display: none;
 }
 
-@media (max-width:640px){
+@media (max-width: 640px) {
   .mini {
     background: rgb(15, 15, 15);
     height: 100vh;
@@ -72,12 +73,12 @@ html {
     transition: 0.4s;
     z-index: 1100;
   }
-  
+
   .mini_show {
     left: 0;
     transition: 0.4s;
   }
-  
+
   .mini li {
     margin: 15px 0;
   }
