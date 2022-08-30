@@ -6,13 +6,12 @@
 
 I've decided to open-source my latest portfolio website! it has dynamic content management to add projects and posts using Contentful CMS, and was built using Next.js and Chakra UI.
 
-Refer to [Next.js](https://nextjs.org/docs/) and [Chakra UI](https://chakra-ui.com/docs) documentation to learn more.
+Refer to [Next.js](https://nextjs.org/docs/) and [Tailwind Css](https://tailwindcss.com/) documentation to learn more.
 
 Feel free to fork this repository to make your own portfolio, and if you liked the repo, kindly support it by giving it a star ⭐!
 
 ## 🛠 Get started
-### Getting the API Keys
-Create an `.env.local` and follow the variable name based on `.env.example` and get the API Keys based on the steps below  
+
 
 <details>
 <summary>Contentful API Keys</summary>
