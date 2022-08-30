@@ -8,7 +8,7 @@ function Contact() {
     <>
       <Fade right>
         <div className=" h-[60vh] md:h-[80vh] flex items-center justify-center px-10">
-          <div className="flex items-center justify-center flex-col space-y-10 text-center px-[3rem]">
+          <div className="flex items-center justify-center flex-col space-y-10 text-center">
             <h1 className="lg:text-[3vw] text-[7vw] font-extrabold">Keep In Touch.</h1>
             <p className="max-w-[400px] text-gray-400 leading-6">
               I'm currently specializing in
