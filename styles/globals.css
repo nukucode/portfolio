@@ -86,6 +86,11 @@ body {
   .mini li {
     margin: 15px 0;
   }
+
+  .menu {
+    font-size: 30px;
+    display: block;
+  }
 }
 
 .layer {
@@ -103,9 +108,7 @@ body {
   display: block;
 }
 
-.menu {
-  font-size: 30px;
-}
+
 
 
 section{
@@ -154,5 +157,14 @@ section .text h1 span:nth-child(even){
 
   100%{
     filter: hue-rotate(300deg);
+  }
+}
+
+@media (max-width:750px) {
+  section .text{
+  transform: skewY(345deg) translateY(-50px);
+  }
+  section .text h1{
+    font-size: 5.5em;
   }
 }
