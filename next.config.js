@@ -7,7 +7,7 @@ const nextConfig = {
   },
   swcMinify: true,
   images:{
-    domains:['images.unsplash.com', 'github.com', 'instagram.fudr1-1.fna.fbcdn.net']
+    domains:['images.unsplash.com','avatars.githubusercontent.com', 'github.com', 'instagram.fudr1-1.fna.fbcdn.net']
   }
 }
 

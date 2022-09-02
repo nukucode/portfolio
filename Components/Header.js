@@ -32,19 +32,19 @@ function Header() {
                 } items-center sm:space-x-10 flex  font-bold`}
               >
                 <Link href="/about">
-                  <li className="hover:bg-gradient-to-r cursor-pointer from-orange-500 to-[#3CCF91] hover:text-transparent hover:bg-clip-text transition-all duration-200">
+                  <li className=" cursor-pointer  transition-all duration-200">
                     <a>About</a>
                   </li>
                 </Link>
 
                 <Link href="/projects">
-                  <li className="hover:bg-gradient-to-r cursor-pointer from-orange-500 to-[#3CCF91] hover:text-transparent hover:bg-clip-text  transition-all duration-200">
+                  <li className=" cursor-pointer  transition-all duration-200 ">
                     <a>Projects</a>
                   </li>
                 </Link>
 
                 <Link href="/blogs" passHref>
-                  <li className="hover:bg-gradient-to-r cursor-pointer from-orange-500 to-[#3CCF91] hover:text-transparent hover:bg-clip-text transition-all duration-200">
+                  <li className=" cursor-pointer  transition-all duration-200">
                     <a>Blogs</a>
                   </li>
                 </Link>

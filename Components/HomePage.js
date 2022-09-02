@@ -23,7 +23,7 @@ function HomePage() {
   return (
     <>
       <Fade bottom collapse>
-        <div className="flex items-center  h-[85vh]">
+        <div className="flex items-center bg  h-[85vh]">
           <div className="flex flex-col space-y-7 px-5  sm:pl-10 lg:pl-[9rem]">
             <div className=" relative -mb-4 md:-mb-8">
               <Roll bottom>
@@ -31,14 +31,14 @@ function HomePage() {
                   Hey there!, I'm
                 </span>
               </Roll>
-              <h1 className="text-[11vw] md:text-[7.5vw]  font-extrabold retro">
-                Ankit Yadav.
+              <h1 className="text-[11vw] md:text-[7.8vw]   font-extrabold text-white ">
+                Ankit <span>Yadav.</span>
               </h1>
             </div>
             <Fade bottom>
               <p className="font-bold text-lg sm:text-xl  md:text-2xl max-w-2xl">
                 Software Enginner.
-                <span className="text-gray-400">
+                <span className="text-gray-400 pl-2">
                   A self-taught devloper with an interest in
                 </span>
                 <span> Computer Science</span>

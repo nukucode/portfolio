@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: Montserrat;
-  font-weight: 500;
+  font-family: 500;
 }
 
 .btn {
@@ -99,7 +103,56 @@ body {
   display: block;
 }
 
+.menu {
+  font-size: 30px;
+}
 
-.menu{
-  font-size: 40px;
+
+section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #111;
+}
+
+section .text{
+  position: relative;
+  transform: skewY(345deg) translateY(-200px);
+  animation: animationColor 5s linear infinite;
+  user-select: none;
+}
+
+section .text h1{
+  position: relative;
+  color: #fff;
+  pointer-events: none;
+  font-size: 8em;
+  width: 100%;
+  font-weight:bold;
+  line-height: 1em;
+  white-space: nowrap;
+  text-shadow: calc(var(--x)) 100px 0 rgba(255, 255, 255, 0.1);
+  transform: translateX(calc(0% - var(--x)* var(--i)));
+}
+
+section .text h1 span{
+  color: #f0f;
+  margin: 0 10px;
+}
+
+section .text h1 span:nth-child(even){
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+  
+  @keyframes animationColor {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+
+  100%{
+    filter: hue-rotate(300deg);
+  }
 }
