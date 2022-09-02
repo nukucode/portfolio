@@ -63,6 +63,10 @@ body {
   display: none;
 }
 
+.menu{
+  display: none;
+}
+
 @media (max-width: 640px) {
   .mini {
     background: rgb(15, 15, 15);
