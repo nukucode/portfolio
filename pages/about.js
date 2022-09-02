@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-function about() {
+function About() {
   useEffect(() => {
     const position = document.documentElement;
     position.addEventListener("mousemove", (e) => {
@@ -202,4 +202,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;
