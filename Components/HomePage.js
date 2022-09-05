@@ -10,7 +10,7 @@ function HomePage() {
   const share = () => {
     const data = {
       title: "therogersak",
-      text: "Connect With Ankit Yadav To Learn These Skills  Development, Ethical Hacking, Programing, Coding, Make  Genius",
+      text: "Connect With therogersak To Learn These Skills  Development, Ethical Hacking, Programing, Coding, Make  Genius",
       url: "https://www.therogersak.com",
     };
 
@@ -88,7 +88,7 @@ function HomePage() {
               </Link>
 
               <button className="btn" onClick={() => share()}>
-                <ShareOutlinedIcon />{" "}
+                <ShareOutlinedIcon />
                 <span className="hidden sm:block">Share</span>
               </button>
             </div>

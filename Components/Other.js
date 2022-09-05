@@ -4,9 +4,6 @@ function Other() {
   const [btn, setBtn] = useState(true);
 
   
-
- 
-
   return (
     <>
       <div

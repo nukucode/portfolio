@@ -50,7 +50,7 @@ function Header() {
                 </Link>
               </ul>
               <div onClick={() => setToggle(!toggle)}>
-                <MenuOutlinedIcon  className=" menu  z-[1100]  text-white cursor-pointer" />
+                <MenuOutlinedIcon  className="menu" />
               </div>
             </div>
           </div>

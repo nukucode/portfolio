@@ -28,7 +28,6 @@ function Projects({ result }) {
     }
   });
 
-  // hulu bhi ji clone open trror open to you tuber strone ponition royal royal 59gjj 459786834 boy girls
   return (
     <>
       <Head>

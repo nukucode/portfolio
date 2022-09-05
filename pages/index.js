@@ -13,9 +13,9 @@ export default function Home() {
     <div className="bg-black text-white">
       <div className="mx-auto max-w-7xl selection:bg-green-500 selection:text-black ">
         <Head>
-          <title>Ankit Yadav - Software Engineer</title>
+          <title>therogersak - Software Engineer</title>
           <meta name="title" content="therogersak - Software Engineer" />
-          <meta name="keywords" content="therogersak, therogersak website" />
+          <meta name="keywords" content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official" />
           <meta
             name="description"
             content="Software Engineer based in India, an undergraduate student at Self."
@@ -23,18 +23,21 @@ export default function Home() {
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://therogersak.netlify.app/" />
-          <meta
-            property="og:title"
-            content="therogersak - Software Engineer"
-          />
+          <meta property="og:title" content="therogersak - Software Engineer" />
           <meta
             property="og:description"
             content="Software Engineer based in India."
           />
-          <meta property="og:image" content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true" />
+          <meta
+            property="og:image"
+            content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
+          />
 
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://abdulrahman.id/" />
+          <meta
+            property="twitter:url"
+            content="https://therogersak.netlify.app/"
+          />
           <meta
             property="twitter:title"
             content="therogersak - Software Engineer"

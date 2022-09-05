@@ -3,7 +3,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,8 +62,11 @@ body {
   display: none;
 }
 
-.menu{
+.menu {
   display: none;
+  color: #fff;
+  z-index: 1100;
+  cursor: pointer;
 }
 
 @media (max-width: 640px) {
@@ -112,10 +114,7 @@ body {
   display: block;
 }
 
-
-
-
-section{
+section {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -123,52 +122,51 @@ section{
   background: #111;
 }
 
-section .text{
+section .text {
   position: relative;
   transform: skewY(345deg) translateY(-200px);
   animation: animationColor 5s linear infinite;
   user-select: none;
 }
 
-section .text h1{
+section .text h1 {
   position: relative;
   color: #fff;
   pointer-events: none;
   font-size: 8em;
   width: 100%;
-  font-weight:bold;
+  font-weight: bold;
   line-height: 1em;
   white-space: nowrap;
   text-shadow: calc(var(--x)) 100px 0 rgba(255, 255, 255, 0.1);
-  transform: translateX(calc(0% - var(--x)* var(--i)));
+  transform: translateX(calc(0% - var(--x) * var(--i)));
 }
 
-section .text h1 span{
+section .text h1 span {
   color: #f0f;
   margin: 0 10px;
 }
 
-section .text h1 span:nth-child(even){
+section .text h1 span:nth-child(even) {
   color: transparent;
   -webkit-text-stroke: 2px #fff;
 }
 
-  
-  @keyframes animationColor {
-  0%{
+@keyframes animationColor {
+  0% {
     filter: hue-rotate(0deg);
   }
 
-  100%{
+  100% {
     filter: hue-rotate(300deg);
   }
 }
 
-@media (max-width:750px) {
-  section .text{
-  transform: skewY(345deg) translateY(-50px);
+@media (max-width: 750px) {
+  section .text {
+    transform: skewY(345deg) translateY(-50px);
   }
-  section .text h1{
+  section .text h1 {
     font-size: 5.5em;
   }
 }
