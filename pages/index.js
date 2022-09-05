@@ -9,6 +9,9 @@ import Footer from "../Components/Footer";
 import Other from "../Components/Other";
 
 export default function Home() {
+  console.clear()
+  const style = 'font-weight: bold; font-size: 50px; text-shadow: -0.06em 0 red,  0.06em 0 cyan;';
+console.log('%c Developer!', style);
   return (
     <div className="bg-black text-white">
       <div className="mx-auto max-w-7xl selection:bg-green-500 selection:text-black ">
