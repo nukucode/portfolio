@@ -62,12 +62,7 @@ body {
   display: none;
 }
 
-.menu {
-  display: none;
-  color: #fff;
-  z-index: 1100;
-  cursor: pointer;
-}
+
 
 @media (max-width: 640px) {
   .mini {
@@ -93,10 +88,7 @@ body {
     margin: 15px 0;
   }
 
-  .menu {
-    font-size: 30px;
-    display: block;
-  }
+  
 }
 
 .layer {

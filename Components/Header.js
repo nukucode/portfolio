@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../asest/logoo.png";
 import Link from "next/link";
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import Fade from "react-reveal/Fade";
+import { Bars3Icon } from '@heroicons/react/24/solid'
+
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -50,9 +51,7 @@ function Header() {
                 </Link>
               </ul>
               <div onClick={() => setToggle(!toggle)}>
-                {
-                  !toggle ? <MenuOutlinedIcon  className="menu" /> : <div></div>
-                }
+               <Bars3Icon className="h-8 block sm:hidden cursor-pointer" />
               </div>
             </div>
           </div>
