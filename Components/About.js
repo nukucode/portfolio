@@ -69,7 +69,7 @@ function About() {
               </p>
               <p className="text-gray-400 text-[15px]">
                 When I'm not coding I play games with my friends, watch some
-                show on Netflix, or if the weather's good, play basketball! 🏀
+                show on Netflix, or if the weather's good, play Pubg! 
               </p>
             </div>
             <div>

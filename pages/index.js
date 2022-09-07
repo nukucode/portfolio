@@ -7,8 +7,10 @@ import HomePage from "../Components/HomePage";
 import Projects from "../Components/Projects";
 import Footer from "../Components/Footer";
 import Other from "../Components/Other";
+import client from "../client";
+import groq from 'groq'
 
-export default function Home() {
+export default function Home({posts}) {
   console.clear()
   const style = 'font-weight: bold; font-size: 50px; text-shadow: -0.06em 0 red,  0.06em 0 cyan;';
 console.log('%c Developer!', style);
@@ -59,11 +61,22 @@ console.log('%c Developer!', style);
         <HomePage />
         <About />
         <Projects />
-        <Blogs />
+        <Blogs posts={posts} />
         <Contact />
         <Footer />
         <Other />
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const posts = await client.fetch(groq`
+  *[_type == "post" && publishedAt < now()]|order(publishedAt desc)
+`)
+return {
+  props: {
+    posts
+  }
+}
 }

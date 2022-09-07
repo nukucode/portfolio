@@ -4,33 +4,27 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import Blog from "../../Components/Blog";
-import { db } from "../../firebaseConfig/Firebase";
 import Fade from "react-reveal/Fade";
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Other from "../../Components/Other";
-function Index({ result }) {
-  const [data, setData] = useState([]);
+import client from "../../client";
+import groq from "groq";
+function Index({ posts }) {
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    setData(JSON.parse(result));
-  }, [result]);
+  console.log(posts);
 
-  console.log(data);
-
-  const Search = data.filter((data) => {
+  const Search = posts.filter((data) => {
     if (data === "") {
       return data;
     } else {
       return (
-        data.title.toLowerCase().includes(query.toLowerCase()) ||
-        data.description.toLowerCase().includes(query.toLowerCase())
+        data?.title.toLowerCase().includes(query.toLowerCase())
       );
     }
   });
   return (
     <>
-       <Head>
+      <Head>
         <title>therogersak - Software Engineer</title>
         <meta name="title" content="therogersak - Software Engineer" />
         <meta
@@ -39,13 +33,19 @@ function Index({ result }) {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://therogersak.netlify.app/blogs" />
+        <meta
+          property="og:url"
+          content="https://therogersak.netlify.app/blogs"
+        />
         <meta property="og:title" content="therogersak - Software Engineer" />
         <meta
           property="og:description"
           content="Software Engineer based in India, an undergraduate student at Self."
         />
-        <meta property="og:image" content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true" />
+        <meta
+          property="og:image"
+          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -86,7 +86,7 @@ function Index({ result }) {
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="search projects"
+                  placeholder="search blogs"
                   className="input"
                 />
                 <SearchOutlinedIcon />
@@ -95,16 +95,18 @@ function Index({ result }) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-[5rem] px-3">
             {Search &&
-              Search.map((data) => (
-                <Blog
-                  timestamp={data.timestamp}
-                  id={data.id}
-                  key={data.id}
-                  title={data.title}
-                  description={data.description}
-                  index
-                />
-              ))}
+              Search.map(
+                ({ _id, title = "", slug = "", publishedAt = "", body }) => (
+                  <Blog
+                    timestamp={publishedAt}
+                    id={_id}
+                    slug={slug}
+                    key={_id}
+                    title={title}
+                    body={body}
+                  />
+                )
+              )}
           </div>
           <Footer />
           <Other />
@@ -117,21 +119,12 @@ function Index({ result }) {
 export default Index;
 
 export async function getServerSideProps() {
-  const colRef = collection(db, "blogs");
-  const q = query(colRef, orderBy("timestamp", "desc"));
-  const data = await getDocs(q);
-
-  const results = [];
-
-  data.forEach((doc) => {
-    results.push({
-      ...doc.data(),
-      id: doc.id,
-      timestamp: doc.data().timestamp.toMillis(),
-    });
-  });
-
+  const posts = await client.fetch(groq`
+  *[_type == "post" && publishedAt < now()]|order(publishedAt desc)
+`);
   return {
-    props: { result: JSON.stringify(results) },
+    props: {
+      posts,
+    },
   };
 }
