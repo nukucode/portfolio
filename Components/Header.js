@@ -50,7 +50,9 @@ function Header() {
                 </Link>
               </ul>
               <div onClick={() => setToggle(!toggle)}>
-                <MenuOutlinedIcon  className="menu" />
+                {
+                  !toggle ? <MenuOutlinedIcon  className="menu" /> : <div></div>
+                }
               </div>
             </div>
           </div>
