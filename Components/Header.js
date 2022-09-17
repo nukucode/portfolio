@@ -17,7 +17,7 @@ function Header() {
               <Link href="/">
                 <Image
                   src={logo}
-                  alt="fgdg"
+                  alt="therogersak"
                   width={150}
                   height={50}
                   objectFit="cover"

@@ -62,8 +62,6 @@ body {
   display: none;
 }
 
-
-
 @media (max-width: 640px) {
   .mini {
     background: rgb(15, 15, 15);
@@ -87,8 +85,6 @@ body {
   .mini li {
     margin: 15px 0;
   }
-
-  
 }
 
 .layer {
@@ -161,4 +157,20 @@ section .text h1 span:nth-child(even) {
   section .text h1 {
     font-size: 5.5em;
   }
+}
+
+.tracker {
+  position: fixed;
+  top: VAR(--T);
+  left: var(--L);
+  width: 50px;
+  z-index: 1100;
+  transition: all .15s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+
+.tracker img {
+  width: 100%;
+  height: 100%;
 }
