@@ -3,6 +3,7 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import PortableText from "react-portable-text";
 import Image from "next/image";
+import Other from "../../Components/Other";
 import client from "../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import ContentPasteOutlinedIcon from "@mui/icons-material/ContentPasteOutlined";
@@ -12,8 +13,6 @@ function urlFor(source) {
 }
 
 function Blog({ post }) {
-
-
   function prettyDate(date) {
     var months = [
       "Jan",
@@ -42,9 +41,9 @@ function Blog({ post }) {
   return (
     <>
       <div className="bg-black w-full">
-        <div className=" max-w-7xl mx-auto px-5">
+        <div className="max-w-7xl mx-auto">
           <Header />
-          <div className="max-w-4xl mt-[5rem] mx-auto text-white ">
+          <div className="max-w-4xl mt-[5rem] mx-auto text-white px-5 ">
             <div className="space-y-5">
               <h1 className=" text-[1.8rem] md:text-[2.5rem] max-w-[600px] font-extrabold">
                 {post?.title}
@@ -77,6 +76,7 @@ function Blog({ post }) {
                   width={900}
                   height={700}
                   alt={post.title}
+                  loading="lazy"
                   className="border rounded-md border-gray-400 shadow-2xl"
                 />
               </div>
@@ -120,6 +120,7 @@ function Blog({ post }) {
               </div>
             </div>
           </div>
+          <Other />
           <Footer />
         </div>
       </div>

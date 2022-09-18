@@ -23,7 +23,7 @@ function HomePage() {
   return (
     <>
       <Fade bottom collapse>
-        <div className="flex items-center bg  h-[85vh]">
+        <div className="flex items-center h-[85vh]">
           <div className="flex flex-col space-y-7 px-5  sm:pl-10 lg:pl-[9rem]">
             <div className=" relative -mb-4 md:-mb-8">
               <Roll bottom>

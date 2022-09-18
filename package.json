@@ -23,7 +23,6 @@
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
     "react-portable-text": "^0.5.1",
     "react-reveal": "^1.2.2",
     "styled-components": "^5.3.5"

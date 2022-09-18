@@ -80,6 +80,7 @@ function About() {
                 height={400}
                 className="rounded-full"
                 objectFit="cover"
+                loading="lazy"
               />
             </div>
           </div>

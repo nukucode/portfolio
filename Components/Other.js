@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { WindowSharp } from "@mui/icons-material";
 function Other() {
-  const [btn, setBtn] = useState(true);
+  const [btn, setBtn] = useState(false);
 
   useEffect(() => {
     const position = document.documentElement;
@@ -9,7 +10,16 @@ function Other() {
       position.style.setProperty("--L", e.clientX + "px");
       position.style.setProperty("--T", e.clientY + "px");
     });
-  });
+
+
+    if (typeof window !== 'undefined'){
+      window.addEventListener('scroll', () => {
+        if(this.window.pageYOffset >= 80){
+          setBtn(true)
+        }
+      })
+    }
+  },[]);
 
   return (
     <>
@@ -22,7 +32,7 @@ function Other() {
           });
         }}
         className={`fixed bottom-5 right-5 bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:bg-gray-900/70 hover:border-gray-900/20  animate-pulse ${
-          btn ? "flex" : "hidden"
+          !btn ? "hidden" : "flex"
         }`}
       >
         <KeyboardArrowUpIcon className="top" />
