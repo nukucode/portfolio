@@ -12,13 +12,13 @@ function Other() {
     });
 
 
-    
+    if (typeof window !== 'undefined'){
       window.addEventListener('scroll', () => {
         if(this.window.pageYOffset >= 80){
           setBtn(true)
         }
       })
-    
+    }
   },[]);
 
   return (
