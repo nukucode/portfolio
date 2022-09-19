@@ -20,9 +20,7 @@ function Other() {
             behavior: "smooth",
           });
         }}
-        className={`fixed bottom-5 right-5 bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:bg-gray-900/70 hover:border-gray-900/20  animate-pulse ${
-          btn ? "hidden" : "flex"
-        }`}
+        className={`fixed bottom-5 right-5 bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:bg-gray-900/70 hover:border-gray-900/20  animate-pulse`}
       >
         <KeyboardArrowUpIcon className="top" />
       </div>
