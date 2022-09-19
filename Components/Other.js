@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { WindowSharp } from "@mui/icons-material";
 function Other() {
   useEffect(() => {
     const position = document.documentElement;
