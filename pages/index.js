@@ -20,7 +20,7 @@ console.log('%c Developer!', style);
         <Head>
           <title>therogersak - Software Engineer</title>
           <meta name="title" content="therogersak - Software Engineer" />
-          <meta name="keywords" content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official" />
+          <meta name="keywords" content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official, usersploit, hacker , coder, programmer , therogersak , rogersak , therogersak instagram, therogers github, github codes , portfolio therogersak, portfolio" />
           <meta
             name="description"
             content="Software Engineer based in India, an undergraduate student at Self."
@@ -31,11 +31,11 @@ console.log('%c Developer!', style);
           <meta property="og:title" content="therogersak - Software Engineer" />
           <meta
             property="og:description"
-            content="Software Engineer based in India."
+            content="Software Engineer based in India. therogersak software enginner. therogersak"
           />
           <meta
             property="og:image"
-            content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
+            content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
@@ -53,7 +53,7 @@ console.log('%c Developer!', style);
           />
           <meta
             property="twitter:image"
-            content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
+            content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
           />
         </Head>
 

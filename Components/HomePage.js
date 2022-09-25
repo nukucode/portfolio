@@ -11,7 +11,8 @@ function HomePage() {
     const data = {
       title: "therogersak",
       text: "Connect With therogersak To Learn These Skills  Development, Ethical Hacking, Programing, Coding, Make  Genius",
-      url: "https://www.therogersak.com",
+      url: "https://therogersak.vercel.app/",
+      
     };
 
     if (navigator.canShare && navigator.canShare(data)) {

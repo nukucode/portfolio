@@ -20,37 +20,6 @@ function Project({
   tag,
   index,
 }) {
-  const getTag = (tag) => {
-    let values = [];
-    if (tag == "react-js") {
-      values[0] = "#61dbfb";
-    } else if (tag == "python") {
-      values[0] = "#4B8BBE";
-    } else if (tag == "javascript") {
-      values[0] = "#F0DB4F";
-    } else if (tag == "sass") {
-      values[0] = "#cd6799";
-    } else if (tag == "tailwind") {
-      values[0] = "#36B7F0";
-    } else if (tag == "recoil") {
-      values[0] = "#3578E5";
-    } else if (tag == "bootstrap") {
-      values[0] = "purple";
-    } else if (tag == "redux") {
-      values[0] = "#764abc";
-    } else if (tag == "next-js") {
-      values[0] = "#3CCF91";
-     
-    } else if (tag === "firebase") {
-      values[0] = "#F99F13";
-      
-    } else {
-      values[0] = "#aeaeae";
-    
-    }
-    return values;
-  };
-
   return (
     <>
       <motion.div
@@ -89,15 +58,8 @@ function Project({
             </div>
             <div className="flex items-center space-x-5 overflow-x-scroll scrollbar-hide">
               {tag &&
-                tag.map((name, i) => (
-                  <div
-                    key={i}
-                    style={{
-                      background: `${getTag(name)[0]}50`,
-                      color: `${getTag(name)[0]}`,
-                    }}
-                    className="px-2 space-x-2 flex items-center justify-center whitespace-nowrap w-fit py-1 rounded-md shadow-xl "
-                  >
+                tag.map((name) => (
+                  <div className="border border-green-300 text-green-400 py-1 px-3 rounded-full font-bold capitalize whitespace-nowrap">
                     <span className="text-sm">{name}</span>
                   </div>
                 ))}
