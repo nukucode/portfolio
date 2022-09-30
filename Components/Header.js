@@ -38,11 +38,7 @@ function Header() {
                   </li>
                 </Link>
 
-                <Link href="/skills">
-                  <li className=" cursor-pointer  transition-all duration-200">
-                    <a>Skills</a>
-                  </li>
-                </Link>
+            
 
                 <Link href="/projects">
                   <li className=" cursor-pointer  transition-all duration-200 ">
