@@ -7,7 +7,6 @@ import Other from "../../Components/Other";
 import client from "../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import ContentPasteOutlinedIcon from "@mui/icons-material/ContentPasteOutlined";
-
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
