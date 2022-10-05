@@ -25,7 +25,9 @@
     "react-dom": "18.2.0",
     "react-portable-text": "^0.5.1",
     "react-reveal": "^1.2.2",
-    "styled-components": "^5.3.5"
+    "react-tsparticles": "^2.3.3",
+    "styled-components": "^5.3.5",
+    "tsparticles-shape-confetti": "^1.14.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
