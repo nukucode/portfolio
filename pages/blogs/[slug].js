@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import PortableText from "react-portable-text";
@@ -13,6 +12,7 @@ function urlFor(source) {
 }
 
 function Blog({ post }) {
+ 
   function prettyDate(date) {
     var months = [
       "Jan",
@@ -40,54 +40,39 @@ function Blog({ post }) {
 
   return (
     <>
-    <Head>
-            <title>{post?.title}</title>
-            <meta name="title" content={post?.title} />
-            <meta
-              name="keywords"
-              content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official, usersploit, hacker , coder, programmer , therogersak , rogersak , therogersak instagram, therogers github, github codes , portfolio therogersak, portfolio"
-            />
-            <meta
-              name="description"
-              content="Software Engineer based in India, an undergraduate student at Self."
-            />
+      <Head>
+        <title>{post?.title}</title>
+        <meta name="title" content={post?.title} />
+        <meta
+          name="keywords"
+          content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official, usersploit, hacker , coder, programmer , therogersak , rogersak , therogersak instagram, therogers github, github codes , portfolio therogersak, portfolio"
+        />
+        <meta
+          name="description"
+          content="Software Engineer based in India, an undergraduate student at Self."
+        />
 
-            <meta property="og:type" content="website" />
-            <meta
-              property="og:url"
-              content="https://therogersak.netlify.app/"
-            />
-            <meta
-              property="og:title"
-              content={post?.title}
-            />
-            <meta
-              property="og:description"
-              content="Software Engineer based in India. therogersak software enginner. therogersak"
-            />
-            <meta
-              property="og:image"
-              content={urlFor(post.mainImage).url()}
-            />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://therogersak.netlify.app/" />
+        <meta property="og:title" content={post?.title} />
+        <meta
+          property="og:description"
+          content="Software Engineer based in India. therogersak software enginner. therogersak"
+        />
+        <meta property="og:image" content={urlFor(post.mainImage).url()} />
 
-            <meta property="twitter:card" content="summary_large_image" />
-            <meta
-              property="twitter:url"
-              content="https://therogersak.netlify.app/"
-            />
-            <meta
-              property="twitter:title"
-              content={post?.title}
-            />
-            <meta
-              property="twitter:description"
-              content="Software Engineer based in India, an undergraduate student at Self."
-            />
-            <meta
-              property="twitter:image"
-              content={urlFor(post.mainImage).url()}
-            />
-          </Head>
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://therogersak.netlify.app/"
+        />
+        <meta property="twitter:title" content={post?.title} />
+        <meta
+          property="twitter:description"
+          content="Software Engineer based in India, an undergraduate student at Self."
+        />
+        <meta property="twitter:image" content={urlFor(post.mainImage).url()} />
+      </Head>
       <div className="bg-black w-full">
         <div className="max-w-7xl mx-auto">
           <Header />
@@ -144,7 +129,7 @@ function Blog({ post }) {
                     ),
 
                     h3: (props) => (
-                      <h3 className="my-5 text-lg font-bold" {...props}></h3>
+                      <h3 className="my-5 text-xl font-bold" {...props}></h3>
                     ),
 
                     h4: (props) => (
