@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import PortableText from "react-portable-text";
@@ -6,13 +7,17 @@ import Other from "../../Components/Other";
 import client from "../../client";
 import Head from "next/head";
 import imageUrlBuilder from "@sanity/image-url";
-import ContentPasteOutlinedIcon from "@mui/icons-material/ContentPasteOutlined";
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
 function Blog({ post }) {
- 
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
+
   function prettyDate(date) {
     var months = [
       "Jan",
@@ -114,7 +119,7 @@ function Blog({ post }) {
                 />
               </div>
 
-              <div className="pb-5 leading-8 capitalize  text-gray-400">
+              <div className="pb-5 leading-8  text-gray-400">
                 <PortableText
                   dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
                   projectId={process.env.NEXT_PUBLIC_SANITY_PROJECTID}
@@ -133,11 +138,16 @@ function Blog({ post }) {
                     ),
 
                     h4: (props) => (
-                      <div className="bg-gray-800 shadow-2xl p-5 my-5 rounded-sm relative  break-all ">
-                        <p className="whitespace-normal" {...props}></p>
-
-                        <ContentPasteOutlinedIcon className="copy absolute top-3 right-3 font-bold text-white text-[25px]" />
-                      </div>
+                      <pre>
+                        <code
+                          className="language-js"
+                          style={{
+                            whiteSpace: "normal",
+                            wordBreak: "break-word",
+                          }}
+                          {...props}
+                        ></code>
+                      </pre>
                     ),
 
                     li: ({ children }) => (
