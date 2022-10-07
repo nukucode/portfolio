@@ -126,15 +126,15 @@ function Blog({ post }) {
                   content={post.body}
                   serializers={{
                     h1: (props) => (
-                      <h1 className="my-5 text-2xl font-bold" {...props}></h1>
+                      <h1 className="my-5 text-2xl font-bold text-white" {...props}></h1>
                     ),
 
                     h2: (props) => (
-                      <h1 className="my-5 text-xl font-bold" {...props}></h1>
+                      <h1 className="my-5 text-xl font-bold text-white" {...props}></h1>
                     ),
 
                     h3: (props) => (
-                      <h3 className="my-5 text-xl font-bold" {...props}></h3>
+                      <h3 className="my-5 text-xl font-bold text-white" {...props}></h3>
                     ),
 
                     h4: (props) => (
