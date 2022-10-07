@@ -134,7 +134,7 @@ function Blog({ post }) {
                     ),
 
                     h3: (props) => (
-                      <h3 className="my-5 text-xl font-bold text-white" {...props}></h3>
+                      <h3 className="my-5 text-lg font-bold text-gray-200" {...props}></h3>
                     ),
 
                     h4: (props) => (
