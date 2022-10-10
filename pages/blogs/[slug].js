@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import PortableText from "react-portable-text";
@@ -7,16 +7,82 @@ import Other from "../../Components/Other";
 import client from "../../client";
 import Head from "next/head";
 import imageUrlBuilder from "@sanity/image-url";
-import Prism from "prismjs";
-import "prismjs/themes/prism-tomorrow.css";
+import SyntaxHighlighter from "react-syntax-highlighter";
+const BlockContent = require("@sanity/block-content-to-react");
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
+const serializers = {
+  types: {
+    block: (props) => {
+      const { style = "normal" } = props.node;
+
+      if (/^h\d/.test(style)) {
+        const level = style.replace(/[^\d]/g, "");
+        return React.createElement(
+          style,
+          { className: `heading-${level} text-white text-xl font-bold my-2` },
+          props.children
+        );
+      }
+
+      if (style === "blockquote") {
+        return <blockquote>- {props.children}</blockquote>;
+      }
+
+      // Fall back to default handling
+      return BlockContent.defaultSerializers.types.block(props);
+    },
+    code: ({ node = {} }) => {
+      const { code, language } = node;
+      if (!code) {
+        return null;
+      }
+      return (
+        <SyntaxHighlighter
+          wrapLongLines
+          customStyle={{
+            padding: "2rem",
+            borderRadius: "5px",
+            margin: "2rem 0",
+            boxShadow: "rgba(0, 0, 0, 0.55) 0px 20px 68px",
+          }}
+          showLineNumbers={true}
+          language={language || "javascript"}
+          style={nightOwl}
+        >
+          {code}
+        </SyntaxHighlighter>
+      );
+    },
+  },
+  list: (props) =>
+    console.log("list", props) ||
+    (props.type === "bullet" ? (
+      <ul>{props.children}</ul>
+    ) : (
+      <ol>{props.children}</ol>
+    )),
+  listItem: (props) =>
+    console.log("list", props) ||
+    (props.type === "bullet" ? (
+      <li>{props.children}</li>
+    ) : (
+      <li>{props.children}</li>
+    )),
+  marks: {
+    strong: (props) =>
+      console.log("strong", props) || <strong>{props.children}</strong>,
+    em: (props) => console.log("em", props) || <em>{props.children}</em>,
+    code: (props) =>
+      console.log("code", props) || <code>{props.children}</code>,
+  },
+};
+
 function Blog({ post }) {
-  useEffect(() => {
-    Prism.highlightAll();
-  }, []);
+  console.log(post.body);
 
   function prettyDate(date) {
     var months = [
@@ -120,46 +186,14 @@ function Blog({ post }) {
               </div>
 
               <div className="pb-5 leading-8  text-gray-400">
-                <PortableText
+                <BlockContent
+                  blocks={post.body}
+                  imageOptions={{ w: 320, h: 240, fit: "max" }}
                   dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
                   projectId={process.env.NEXT_PUBLIC_SANITY_PROJECTID}
-                  content={post.body}
-                  serializers={{
-                    h1: (props) => (
-                      <h1 className="my-5 text-2xl font-bold text-white" {...props}></h1>
-                    ),
-
-                    h2: (props) => (
-                      <h1 className="my-5 text-2xl font-bold text-white" {...props}></h1>
-                    ),
-
-                    h3: (props) => (
-                      <h3 className="my-5 text-lg font-bold text-gray-200" {...props}></h3>
-                    ),
-
-                    h4: (props) => (
-                      <pre>
-                        <code
-                          className="language-js"
-                          style={{
-                            whiteSpace: "normal",
-                            wordBreak: "break-word",
-                          }}
-                          {...props}
-                        ></code>
-                      </pre>
-                    ),
-
-                    li: ({ children }) => (
-                      <li className="ml-4 list-disc">{children}</li>
-                    ),
-                    link: ({ children, href }) => (
-                      <a href={href} className="text-blue-500 hover:underline">
-                        {children}
-                      </a>
-                    ),
-                  }}
+                  serializers={serializers}
                 />
+              
               </div>
             </div>
           </div>

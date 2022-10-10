@@ -1,8 +1,8 @@
+@import "sanity-web-styles";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
   font-family: "Montserrat";
   font-family: 500;
@@ -155,20 +155,3 @@ section .text h1 span:nth-child(even) {
     font-size: 5.5em;
   }
 }
-
-.tracker {
-  position: fixed;
-  top: VAR(--T);
-  left: var(--L);
-  width: 50px;
-  z-index: 1100;
-  transition: all 0.15s;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.tracker img {
-  width: 100%;
-  height: 100%;
-}
-
