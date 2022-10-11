@@ -39,7 +39,7 @@ function HomePage() {
               </h1>
               <div className="text-[1.1rem] flex flex-col gap-5 text-gray-800">
                 <p>
-                  I am a
+                  I am a{" "}
                   <span className="font-extrabold">Front-End Developer</span>{" "}
                   from India. I am a strong advocate of responsive and
                   accessible websites. I love challenges and I believe facing
