@@ -29,7 +29,7 @@ function Project({
         exit="exit"
         transition={{ duration: 3 }}
       >
-        <div className="max-w-2xl overflow-x-scroll  h-auto borderbg-slate-900 rounded-lg sm:px-6 px-2 sm:py-8 py-2 ring-1 ring-slate-800 bg-slate-900/30 shadow-xl">
+        <div className="max-w-2xl overflow-x-scroll  h-auto rounded-lg sm:px-6 px-2 sm:py-8 py-2 duration-350 transition-all">
           <div>
             <Image
               src={img1}
@@ -42,7 +42,7 @@ function Project({
           </div>
           <div className="space-y-3 px-3">
             <div className="flex items-center justify-between flex-col gap-3 sm:flex-row my-2">
-              <h1 className="font-bold text-md  sm:text-lg">{title}</h1>
+              <h1 className="font-bold text-black text-md  sm:text-lg">{title}</h1>
               <div className="space-x-5 mb-3">
                 <Link href={`${github}`} passHref>
                   <a target="_blank" rel="noopener noreferrer">
@@ -65,7 +65,7 @@ function Project({
                 ))}
             </div>
             <div className="border-t border-gray-800 pt-2">
-              <p className="text-gray-400 text-[15px] sm:text-lg capitalize ">
+              <p className="text-gray-500 text-[15px] sm:text-lg capitalize ">
                 {description}.
               </p>
             </div>

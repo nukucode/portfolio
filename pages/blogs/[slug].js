@@ -23,7 +23,7 @@ const serializers = {
         const level = style.replace(/[^\d]/g, "");
         return React.createElement(
           style,
-          { className: `heading-${level} text-white text-xl font-bold my-2` },
+          { className: `heading-${level} text-black text-xl font-bold my-2` },
           props.children
         );
       }
@@ -144,12 +144,12 @@ function Blog({ post }) {
         />
         <meta property="twitter:image" content={urlFor(post.mainImage).url()} />
       </Head>
-      <div className="bg-black w-full">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-gray-50 w-full">
+        <div className="max-w-7xl mt-[6rem] pt-[2rem] mx-auto">
           <Header />
-          <div className="max-w-4xl mt-[5rem] mx-auto text-white px-5 ">
+          <div className="max-w-4xl mt-[5rem] mx-auto px-5 ">
             <div className="space-y-5">
-              <h1 className=" text-[1.8rem] md:text-[2.5rem] max-w-[600px] font-extrabold">
+              <h1 className=" text-[1.8rem] md:text-[2.5rem] text-black max-w-[600px] font-extrabold">
                 {post?.title}
               </h1>
               <div className=" ">
@@ -164,11 +164,10 @@ function Blog({ post }) {
                   />
 
                   <div className="flex flex-col sm:space-x-10  sm:flex-row">
-                    <p className="text-gray-400  text-sm">
+                    <p className="text-gray-600  text-sm">
                       <span>{post?.author.name} / </span>
                       <span>{prettyDate(new Date(post._createdAt))}</span>
                     </p>
-                    <div className="text-sm text-gray-300"></div>
                   </div>
                 </div>
               </div>
@@ -177,7 +176,7 @@ function Blog({ post }) {
                 <Image
                   src={urlFor(post.mainImage).url()}
                   objectFit="contain"
-                  width={900}
+                  width={1000}
                   height={700}
                   alt={post.title}
                   loading="lazy"
@@ -185,7 +184,7 @@ function Blog({ post }) {
                 />
               </div>
 
-              <div className="pb-5 leading-8  text-gray-400">
+              <div className="pb-5 leading-8  text-gray-600">
                 <BlockContent
                   blocks={post.body}
                   imageOptions={{ w: 320, h: 240, fit: "max" }}
@@ -193,7 +192,6 @@ function Blog({ post }) {
                   projectId={process.env.NEXT_PUBLIC_SANITY_PROJECTID}
                   serializers={serializers}
                 />
-              
               </div>
             </div>
           </div>

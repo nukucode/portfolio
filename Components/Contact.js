@@ -10,7 +10,7 @@ function Contact() {
         <div className=" h-[60vh] md:h-[80vh] flex items-center justify-center px-10">
           <div className="flex items-center justify-center flex-col space-y-10 text-center">
             <h1 className="lg:text-[3vw] text-[7vw] font-extrabold">Keep In Touch.</h1>
-            <p className="max-w-[400px] text-gray-400 leading-6">
+            <p className="max-w-[400px] text-gray-600 leading-6">
               I'm currently specializing in
               <span className="point"> Front-end</span> Development. Feel free
               to get in touch and talk more about your projects.
@@ -26,7 +26,7 @@ function Contact() {
                 <a className="btn" target="_blank" rel="noopener noreferrer" >
                   <EmailOutlinedIcon /> <span>Email</span>
                 </a>
-              </Link>
+            </Link>
 
               <Link href="https://therogersak.github.io/Rogers-Resume/">
                 <a className="btn" target="_blank" rel="noopener noreferrer">

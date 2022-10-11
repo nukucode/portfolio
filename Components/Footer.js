@@ -5,7 +5,7 @@ function Footer() {
     <>
       <Fade bottom >
         <div>
-          <div className="max-w-[400px] leading-6 text-sm text-gray-400 pb-5 mx-auto text-center">
+          <div className="max-w-[400px] leading-6 text-sm text-gray-800 pb-5 mx-auto text-center">
             <p>
               Designed and Developed by
               <Link href="https:/github.com/therogersak" passHref>

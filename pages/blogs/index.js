@@ -65,10 +65,10 @@ function Index({ posts }) {
           content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
         />
       </Head>
-      <div className="bg-black">
-        <div className=" text-white max-w-7xl space-y-5 mx-auto  sm:px-10">
+      <div className="bg-gray-50">
+        <div className=" text-black max-w-7xl mt-[6rem] pt-[2rem] space-y-5 mx-auto  sm:px-10">
           <Header />
-          <div className="space-y-5 px-5 border-b border-gray-800 pb-5">
+          <div className="space-y-5 px-5  border-b border-gray-800 pb-5">
             <Fade left>
               <div className="max-w-7xl">
                 <h1 className="sm:text-[4vw] text-[2rem]  font-extrabold">

@@ -26,14 +26,17 @@ function Projects() {
             <h3 className="font-bold text-lg md:text-2xl">
               All Creative Works
             </h3>
-            <p className="text-gray-400">
+            <p className="text-gray-700">
               Here's some of my projects that i have worked on.
             </p>
           </div>
           <div>
             <Link href="/projects" passHref className="point">
-              <a target="_blank" rel="noopener noreferrer">
-                {" "}
+              <a
+                target="_blank"
+                className="text-black font-bold"
+                rel="noopener noreferrer"
+              >
                 Explore <ChevronRightIcon />
               </a>
             </Link>
@@ -68,7 +71,6 @@ function Projects() {
               demo={projects[1].data().demo}
             />
           )}
-
         </div>
       </div>
     </>

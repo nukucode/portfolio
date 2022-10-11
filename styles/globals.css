@@ -6,11 +6,10 @@
 body {
   font-family: "Montserrat";
   font-family: 500;
-  background: #000;
 }
 
 .btn {
-  @apply bg-gray-800/50  rounded-md text-sm p-2 flex items-center space-x-2 transition-all duration-200 hover:bg-gray-700/40 hover:animate-pulse shadow-xl;
+  @apply bg-black text-white rounded-md text-sm p-2 flex items-center space-x-2 transition-all duration-200 hover:bg-black/95 hover:animate-pulse shadow-sm shadow-black;
 }
 
 .MuiSvgIcon-root {
@@ -42,11 +41,12 @@ body {
 }
 
 .input {
-  @apply bg-transparent border-none outline-none w-full h-full;
+  @apply bg-transparent border-none outline-none w-full h-full text-gray-700;
 }
 
+
 .search {
-  @apply border border-gray-500/60 max-w-[450px] h-[45px] rounded-md shadow-xl px-3 bg-gray-900/20 flex items-center;
+  @apply border border-gray-500  max-w-[450px] h-[45px] rounded-md px-3 flex items-center;
 }
 
 .top {
@@ -59,9 +59,9 @@ body {
   display: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 769px) {
   .mini {
-    background: rgb(15, 15, 15);
+    background: rgb(255, 255, 255);
     height: 100vh;
     width: 250px;
     flex-direction: column;
@@ -99,59 +99,5 @@ body {
   display: block;
 }
 
-section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: #111;
-}
 
-section .text {
-  position: relative;
-  transform: skewY(345deg) translateY(-200px);
-  animation: animationColor 5s linear infinite;
-  user-select: none;
-}
 
-section .text h1 {
-  position: relative;
-  color: #fff;
-  pointer-events: none;
-  font-size: 8em;
-  width: 100%;
-  font-weight: bold;
-  line-height: 1em;
-  white-space: nowrap;
-  text-shadow: calc(var(--x)) 100px 0 rgba(255, 255, 255, 0.1);
-  transform: translateX(calc(0% - var(--x) * var(--i)));
-}
-
-section .text h1 span {
-  color: #f0f;
-  margin: 0 10px;
-}
-
-section .text h1 span:nth-child(even) {
-  color: transparent;
-  -webkit-text-stroke: 2px #fff;
-}
-
-@keyframes animationColor {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  100% {
-    filter: hue-rotate(300deg);
-  }
-}
-
-@media (max-width: 750px) {
-  section .text {
-    transform: skewY(345deg) translateY(-50px);
-  }
-  section .text h1 {
-    font-size: 5.5em;
-  }
-}
