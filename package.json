@@ -22,13 +22,11 @@
     "framer-motion": "^7.2.1",
     "groq": "^2.29.3",
     "next": "12.2.5",
-    "prismjs": "^1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-portable-text": "^0.5.1",
     "react-reveal": "^1.2.2",
     "react-syntax-highlighter": "^15.5.0",
-    "sanity-web-styles": "^1.0.0-alpha.13",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
