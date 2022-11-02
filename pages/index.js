@@ -1,9 +1,9 @@
 import Head from "next/head";
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import HomePage from "../Components/HomePage";
 
 export default function Home() {
-  console.clear();
   const style =
     "font-weight: bold; font-size: 50px; text-shadow: -0.06em 0 red,  0.06em 0 cyan;";
   console.log("%c Developer!", style);
@@ -51,11 +51,12 @@ export default function Home() {
           content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
         />
       </Head>
-      <div className="bg-gray-50">
+      <div className="bg-[#0D1117]">
         <div className=" relative mx-auto max-w-7xl selection:bg-green-500 h-auto lg:h-screen  selection:text-black flex items-center overflow-hidden justify-center ">
           <Header />
           <HomePage />
         </div>
+          <Footer />
       </div>
     </>
   );

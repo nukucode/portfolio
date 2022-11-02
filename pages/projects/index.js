@@ -65,13 +65,13 @@ function Projects({ result }) {
           content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
         />
       </Head>
-      <div className="bg-gray-50">
+      <div className="bg-[#0D1117]">
         <div className=" text-black space-y-5 mt-[6rem] pt-[2rem] max-w-7xl mx-auto  sm:px-10">
           <Header />
           <div className="space-y-5 px-5 border-b  border-gray-800 pb-5 ">
             <Fade left>
               <div>
-                <h1 className="md:text-[4vw] text-[2rem] mb-3 font-extrabold">
+                <h1 className="md:text-[4vw] text-[2rem] mb-3 font-extrabold text-white">
                   Projects
                 </h1>
                 <p className="text-gray-400 max-w-2xl">

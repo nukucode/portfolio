@@ -60,7 +60,7 @@ body {
 
 @media (max-width: 769px) {
   .mini {
-    background: rgb(255, 255, 255);
+    background:#101720;
     height: 100vh;
     width: 250px;
     flex-direction: column;
@@ -100,3 +100,19 @@ body {
 
 
 
+.input-form{
+  @apply border border-[#090c10] bg-[#090c10]  outline-none py-[12px] pl-3 text-white max-w-full
+  focus:border-green-400
+}
+
+.message{
+  @apply max-w-7xl
+}
+
+select{
+  @apply bg-black 
+}
+
+option{
+  @apply bg-black text-white 
+}

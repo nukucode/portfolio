@@ -23,7 +23,7 @@ const serializers = {
         const level = style.replace(/[^\d]/g, "");
         return React.createElement(
           style,
-          { className: `heading-${level} text-black text-xl font-bold my-2` },
+          { className: `heading-${level} text-gray-200 text-xl font-bold my-2` },
           props.children
         );
       }
@@ -144,12 +144,12 @@ function Blog({ post }) {
         />
         <meta property="twitter:image" content={urlFor(post.mainImage).url()} />
       </Head>
-      <div className="bg-gray-50 w-full">
+      <div className="bg-[#0D1117] w-full">
         <div className="max-w-7xl mt-[6rem] pt-[2rem] mx-auto">
           <Header />
           <div className="max-w-4xl mt-[5rem] mx-auto px-5 ">
             <div className="space-y-5">
-              <h1 className=" text-[1.8rem] md:text-[2.5rem] text-black max-w-[600px] font-extrabold">
+              <h1 className=" text-[1.8rem] md:text-[2.5rem] text-white max-w-[600px] font-extrabold">
                 {post?.title}
               </h1>
               <div className=" ">
@@ -164,7 +164,7 @@ function Blog({ post }) {
                   />
 
                   <div className="flex flex-col sm:space-x-10  sm:flex-row">
-                    <p className="text-gray-600  text-sm">
+                    <p className="text-green-400  text-sm">
                       <span>{post?.author.name} / </span>
                       <span>{prettyDate(new Date(post._createdAt))}</span>
                     </p>

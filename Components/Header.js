@@ -10,7 +10,7 @@ function Header() {
   return (
     <>
       <Fade top>
-        <div className="absolute top-0 left-0 right-0 bg-gray-50 z-50">
+        <div className="absolute top-0 left-0 right-0 bg-[#0D1117] z-50">
           <div className="flex items-center justify-between max-w-6xl mx-auto text-gray-700 p-5">
             <div className="w-14 h-14">
               <Link href="/">
@@ -31,26 +31,26 @@ function Header() {
                   toggle ? "mini mini_show" : "mini"
                 } items-center sm:space-x-10 flex font-bold`}
               >
-                <Link href="/">
-                  <li className=" cursor-pointer  transition-all duration-200">
-                    <a>About</a>
+                <Link href="/contact">
+                  <li className="text-white cursor-pointer  transition-all duration-200">
+                    <a>Contact</a>
                   </li>
                 </Link>
 
                 <Link href="/projects">
-                  <li className=" cursor-pointer  transition-all duration-200 ">
+                  <li className="text-white cursor-pointer  transition-all duration-200 ">
                     <a>Projects</a>
                   </li>
                 </Link>
 
                 <Link href="/blogs" passHref>
-                  <li className=" cursor-pointer  transition-all duration-200">
+                  <li className="text-white cursor-pointer  transition-all duration-200">
                     <a>Blogs</a>
                   </li>
                 </Link>
               </ul>
               <div onClick={() => setToggle(!toggle)}>
-                <Bars3Icon className="h-8 block md:hidden cursor-pointer" />
+                <Bars3Icon className="text-white h-8 block md:hidden cursor-pointer" />
               </div>
             </div>
           </div>
