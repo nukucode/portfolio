@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import Header from "../Components/Header";
+import React, { useState } from "react";
+import Header from "../../Components/Header";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
-import Footer from "../Components/Footer";
-import { db } from "../firebaseConfig/Firebase";
+import Footer from "../../Components/Footer";
+import { db } from "../../firebaseConfig/Firebase";
 import { addDoc, collection, serverTimestamp , setDoc , doc } from "firebase/firestore";
 
-function index() {
+function Index() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [topic, setTopic] = useState("");
@@ -119,4 +119,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
