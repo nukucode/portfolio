@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 import { db } from "../firebaseConfig/Firebase";
 import { addDoc, collection, serverTimestamp , setDoc , doc } from "firebase/firestore";
 
-function contact() {
+function index() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [topic, setTopic] = useState("");
@@ -119,4 +119,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default index;
