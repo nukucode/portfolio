@@ -29,7 +29,7 @@ function Project({
         exit="exit"
         transition={{ duration: 3 }}
       >
-        <div className="max-w-2xl overflow-x-scroll  h-auto sm:px-6 px-2 sm:py-8 py-2 duration-350 transition-all border-b border-b-green-400">
+        <div className="max-w-2xl overflow-x-scroll  h-auto sm:px-6 px-2 sm:py-8 py-2 duration-350 transition-all border rounded-xl border-green-400">
           <div>
             <Image
               src={img1}

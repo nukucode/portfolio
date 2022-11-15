@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <>
       <Fade bottom>
-        <div className="mt-[8rem] lg:mt-14 h-auto lg:h-screen flex items-center justify-center">
+        <div className="mb-[5rem] h-auto flex items-center justify-center">
           <div className="px-5 flex items-center justify-center flex-col lg:flex-row gap-10">
             <Fade left>
               <div className="max-w-[500px] mx-auto md:mt-[6rem]">

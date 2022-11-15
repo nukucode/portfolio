@@ -144,9 +144,9 @@ function Blog({ post }) {
         />
         <meta property="twitter:image" content={urlFor(post.mainImage).url()} />
       </Head>
-      <div className="bg-[#0D1117] w-full">
-        <div className="max-w-7xl mt-[6rem] pt-[2rem] mx-auto">
+      <div className="w-full">
           <Header />
+        <div className="max-w-7xl mt-[2rem] pt-[2rem] mx-auto">
           <div className="max-w-4xl mt-[5rem] mx-auto px-5 ">
             <div className="space-y-5">
               <h1 className=" text-[1.8rem] md:text-[2.5rem] text-white max-w-[600px] font-extrabold">

@@ -7,7 +7,7 @@ const nextConfig = {
   },
   swcMinify: true,
   images:{
-    domains:['images.unsplash.com', 'cdn.sanity.io', 'avatars.githubusercontent.com', 'github.com', 'instagram.fudr1-1.fna.fbcdn.net']
+    domains:['images.unsplash.com', 'cdn.sanity.io', 'avatars.githubusercontent.com', 'github.com', 'uploads-ssl.webflow.com']
   },
 
   env : {

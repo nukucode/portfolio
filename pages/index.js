@@ -51,12 +51,10 @@ export default function Home() {
           content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
         />
       </Head>
-      <div className="bg-[#0D1117]">
-        <div className=" relative mx-auto max-w-7xl selection:bg-green-500 h-auto lg:h-screen  selection:text-black flex items-center overflow-hidden justify-center ">
-          <Header />
-          <HomePage />
-        </div>
-          <Footer />
+      <div>
+        <Header />
+        <HomePage />
+        <Footer />
       </div>
     </>
   );

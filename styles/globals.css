@@ -2,13 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   font-family: "Montserrat";
   font-family: 500;
+  background-color: #0d1117;
 }
 
-.btn {
-  @apply bg-black text-white rounded-md text-sm p-2 flex items-center space-x-2 transition-all duration-200 hover:bg-black/95 hover:animate-pulse shadow-sm shadow-black;
+::-webkit-scrollbar {
+  display: none;
 }
 
 .MuiSvgIcon-root {
@@ -24,25 +26,9 @@ body {
   @apply animate-pulse;
 }
 
-.dot {
-  @apply relative;
-}
-
-.dot::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -19px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgb(136, 133, 133);
-}
-
 .input {
   @apply bg-transparent border-none outline-none w-full h-full text-gray-700;
 }
-
 
 .search {
   @apply border border-gray-500  max-w-[450px] h-[45px] rounded-md px-3 flex items-center;
@@ -54,65 +40,38 @@ body {
   cursor: pointer;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @media (max-width: 769px) {
   .mini {
-    background:#101720;
-    height: 100vh;
-    width: 250px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    z-index: 1100 !important;
     position: absolute;
+    top: -100rem;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.803);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    transition: 0.4s;
+  }
+
+  .mini-show {
     top: 0;
-    left: -50rem;
-    transition: 0.4s;
-    z-index: 1100;
-  }
-
-  .mini_show {
-    left: 0;
     transition: 0.4s;
   }
 
-  .mini li {
-    margin: 15px 0;
-  }
-}
-
-.layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(15, 15, 15, 0.256);
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  display: none;
-}
-
-.layer_show {
-  display: block;
 }
 
 
 
-.input-form{
+.input-form {
   @apply border border-[#090c10] bg-[#090c10]  outline-none py-[12px] pl-3 text-white max-w-full
-  focus:border-green-400
+  focus:border-green-400 rounded-md;
 }
 
-.message{
-  @apply max-w-7xl
+.message {
+  @apply max-w-7xl;
 }
 
-select{
-  @apply bg-black 
+.menu-btn {
+  @apply cursor-pointer text-white rounded-md shadow-sm bg-green-500 w-[40px] h-[40px] p-1 transition-all duration-200;
 }
 
-option{
-  @apply bg-black text-white 
-}
