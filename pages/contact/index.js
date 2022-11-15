@@ -150,7 +150,7 @@ function Index() {
         <div className="max-w-7xl mx-auto flex items-center justify-center flex-col gap-1 text-center">
           <h1 className="font-bold text-2xl">Follow Me</h1>
           <p>You can also follow me social channels below</p>
-          <div className="my-[3rem] px-8 w-full grid xl:grid-cols-5 gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div className="my-[3rem] px-5 sm:px-10 w-full grid xl:grid-cols-5 gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {" "}
             <Link
               icon="https://uploads-ssl.webflow.com/6310a2f29cd6000cb1750803/6310a2f39cd6006609750890_icon-1-social-media-video-x-template.svg"

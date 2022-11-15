@@ -8,7 +8,7 @@ function Header() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <header className="max-w-6xl flex items-center p-10 justify-between mx-auto">
+      <header className="max-w-6xl flex items-center sm:p-10 p-5 justify-between mx-auto">
         <Fade top>
           <div className="w-14 h-14 border-green-400 border p-[.8px] rounded-full">
             <Link href="/">
