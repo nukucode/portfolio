@@ -29,22 +29,22 @@ function Header() {
             } flex items-center justify-center gap-10 font-bold text-white`}
           >
             <Link href="/contact">
-              <a>Contact</a>
+              <a className="link">Contact</a>
             </Link>
 
             <Link href="/projects">
-              <a>Projects</a>
+              <a className="link">Projects</a>
             </Link>
 
             <Link href="/blogs">
-              <a>Blog</a>
+              <a className="link">Blog</a>
             </Link>
           </ul>
 
           <div className="z-[1100] md:hidden">
             {toggle ? (
               <XMarkIcon
-                className="menu-btn"
+                className={`menu-btn ${toggle ? "text-white" : "text-black"}`}
                 onClick={() => setToggle(!toggle)}
               />
             ) : (

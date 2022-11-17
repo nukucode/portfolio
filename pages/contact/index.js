@@ -7,6 +7,7 @@ import { serverTimestamp, setDoc, doc } from "firebase/firestore";
 import Head from "next/head";
 import Link from "../../Components/Link";
 
+
 function Index() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -80,7 +81,7 @@ function Index() {
           content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
         />
       </Head>
-      <div className="text-white h-auto">
+      <div className="text-black h-auto">
         <Header />
         <div className="border-b pb-[6rem] max-w-7xl mx-auto py-[2rem] mt-[1rem] mb-[4rem] px-5 flex lg:items-center justify-center flex-col lg:flex-row lg:gap-[10rem] gap-[2rem]">
           <div className="max-w-[400px]">
@@ -91,12 +92,12 @@ function Index() {
             </p>
             <a href="mailto:therogersak@gmail.com">
               <button className="p-[1rem] rounded-2xl bg-[#131920] flex items-center gap-3">
-                <EnvelopeIcon className="h-10 bg-red-500 p-2 rounded-full" />
-                <span className="font-bold">therogersak@gmail.com</span>
+                <EnvelopeIcon className="h-10 bg-green-400 p-2 rounded-full" />
+                <span className="font-bold text-white">therogersak@gmail.com</span>
               </button>
             </a>
           </div>
-          <form className="w-full bg-[#131920] px-3 py-10 sm:p-14 rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-5  ">
+          <form className="w-full py-10 grid grid-cols-1 md:grid-cols-2 gap-5 ">
             <input
               type="text"
               placeholder="Your name"
@@ -139,7 +140,7 @@ function Index() {
               }}
               className={`bg-gray-400' : 'bg-black h-[45px] flex items-center justify-center gap-2 duration-200 transition-all hover:bg-[#0a0a0a] ${
                 loading ? "bg-gray-800 opacity-60" : "bg-black"
-              }`}
+              } text-white`}
             >
               <span>{loading ? "Message Sended" : "Just Send"}</span>{" "}
               <ArrowUpRightIcon className="h-5 text-white" />
@@ -149,7 +150,7 @@ function Index() {
 
         <div className="max-w-7xl mx-auto flex items-center justify-center flex-col gap-1 text-center">
           <h1 className="font-bold text-2xl">Follow Me</h1>
-          <p>You can also follow me social channels below</p>
+          <p className="p-5">You can also follow me social channels below</p>
           <div className="my-[3rem] px-5 sm:px-10 w-full grid xl:grid-cols-5 gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {" "}
             <Link
@@ -189,7 +190,6 @@ function Index() {
             />
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

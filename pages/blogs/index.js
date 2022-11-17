@@ -67,11 +67,11 @@ function Index({ posts }) {
       </Head>
       <div>
           <Header />
-        <div className=" text-black max-w-7xl mt-[3rem] pt-[2rem] space-y-5 mx-auto  sm:px-10">
+        <div className=" text-black max-w-7xl mt-[2rem] space-y-5 mx-auto  sm:px-10">
           <div className="space-y-5 px-5  border-b border-gray-800 pb-5">
             <Fade left>
               <div className="max-w-7xl">
-                <h1 className="sm:text-[4vw] text-[2rem]  font-extrabold text-white">
+                <h1 className="sm:text-[4vw] text-[2rem]  font-extrabold text-black">
                   Articles
                 </h1>
                 <p className="text-gray-400 max-w-2xl">
@@ -108,7 +108,6 @@ function Index({ posts }) {
                 )
               )}
           </div>
-          <Footer />
           <Other />
         </div>
       </div>

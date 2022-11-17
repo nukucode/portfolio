@@ -52,9 +52,11 @@ export default function Home() {
         />
       </Head>
       <div>
-        <Header />
-        <HomePage />
-        <Footer />
+        {" "}
+        <div className="max-w-5xl mx-auto">
+          <Header />
+          <HomePage />
+        </div>
       </div>
     </>
   );
