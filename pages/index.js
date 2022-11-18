@@ -56,6 +56,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <Header />
           <HomePage />
+          <Footer />
         </div>
       </div>
     </>

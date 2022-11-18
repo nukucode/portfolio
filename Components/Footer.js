@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
       <Fade bottom>
-        <footer className="footer">
+        <footer className="footer lg:max-w-7xl mx-auto">
           <Link href="https://twitter.com/therogersak">
             <a
               className="p-3"

@@ -251,15 +251,14 @@ body {
   padding: 0 1rem;
 }
 
-.footer{
-  @apply space-x-5;
+.footer {
+  @apply space-x-5 mt-[-3.5rem] max-w-[650px];
 }
 
 @media (max-width: 769px) {
-
-  .footer{
-  @apply space-x-0;
-}
+  .footer {
+    @apply space-x-0 mt-0 max-w-full;
+  }
   .footer {
     position: fixed;
     bottom: 0;
@@ -274,18 +273,18 @@ body {
   }
 
   .home {
-  min-height: calc(100vh - 25vh);
-  padding: 0 1rem;
-}
+    min-height: calc(100vh - 25vh);
+    padding: 0 1rem;
+  }
 }
 
-
-.arrow-animation{
+.arrow-animation {
   animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }

@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <>
       <Fade bottom>
-        <div className="mx-auto flex justify-center flex-col home max-w-[650px] md:max-w-3xl lg:max-w-7xl">
+        <div className="mx-auto flex justify-center flex-col home max-w-[650px] md:max-w-1xl lg:max-w-7xl">
           <div
             className="intro_text text-[3.5rem] md:text-[7vw]"
             data-text="I'm Ankit Yadav"
@@ -81,7 +81,6 @@ function HomePage() {
               title="See Resume"
             />
           </div>
-          <Footer />
         </div>
       </Fade>
     </>
