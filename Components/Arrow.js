@@ -8,7 +8,7 @@ function Arrow({ link, title }) {
       <Link href={link}>
         <a
           aria-label={title}
-          className="text-gray-600 flex items-center gap-3 py-8 w-fit pb-[3rem] md:pb-0"
+          className="text-gray-600 flex items-center gap-3 py-8 w-fit pb-[6rem] md:pb-0"
           target="_blank"
         >
           <span>{title}</span>
