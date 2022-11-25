@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -69,7 +71,7 @@ body {
 }
 
 .link {
-  @apply hover:bg-gray-800 p-2 rounded-md duration-200 transition-all text-black hover:text-white;
+  @apply hover:bg-gray-800 p-2 rounded-md duration-200 transition-all text-gray-500 hover:text-white;
 }
 
 /* Gilitch Effect */
@@ -292,4 +294,48 @@ body {
     transform: translateX(0);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+
+
+.gallery {
+  width: min(100%, 80rem);
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.gallery Image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .img-1x1 {
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery .img-2x2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery .img-2x1 {
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+  aspect-ratio: 2 / 1;
+}
+
+.special{
+  font-family: Caveat;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.active{
+  color: rgb(255, 255, 255);
+  background: #000;
 }

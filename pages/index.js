@@ -53,8 +53,8 @@ export default function Home() {
       </Head>
       <div>
         {" "}
-        <div className="max-w-5xl mx-auto">
           <Header />
+        <div className="max-w-5xl mx-auto">
           <HomePage />
           <Footer />
         </div>

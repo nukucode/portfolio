@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-
+import { useRouter } from "next/router";
 function Header() {
   const [toggle, setToggle] = useState(false);
+
+  const router = useRouter();
   return (
     <>
       <header className="max-w-6xl flex items-center sm:p-10 p-5 justify-between mx-auto">
@@ -29,15 +31,43 @@ function Header() {
             } flex items-center justify-center gap-10 font-bold text-white`}
           >
             <Link href="/contact">
-              <a className="link">Contact</a>
+              <a
+                className={
+                  router.pathname == "/contact" ? "active link" : "link"
+                }
+              >
+                Contact
+              </a>
             </Link>
 
             <Link href="/projects">
-              <a className="link">Projects</a>
+              <a
+                className={
+                  router.pathname == "/projects" ? "active link" : "link"
+                }
+              >
+                Projects
+              </a>
             </Link>
 
             <Link href="/blogs">
-              <a className="link">Blog</a>
+              <a
+                className={
+                  router.pathname == "/blogs" ? "active link" : "link"
+                }
+              >
+                Blog
+              </a>
+            </Link>
+
+            <Link href="/gallery">
+              <a
+                className={
+                  router.pathname == "/gallery" ? "active link" : "link"
+                }
+              >
+                Gallery
+              </a>
             </Link>
           </ul>
 

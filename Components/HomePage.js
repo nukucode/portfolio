@@ -37,7 +37,7 @@ function HomePage() {
                 </a>
               </Link>
               ,{" "}
-              <Link href="/articles">
+              <Link href="/blogs">
                 <a aria-label="Go to Articles Page And Check What I Read">
                   <button className="btn" type="button" tabIndex="-1">
                     Articles
