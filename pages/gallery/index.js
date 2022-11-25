@@ -62,8 +62,8 @@ function Projects({ result }) {
           <h1 className="special">Life is like Pic - Ankit Yadav</h1>
           <div className="gallery">
             {data &&
-              data.map((data) => (
-                <Img img={data.imgUrl} timestamp={data.timestamp} classs={data.class} />
+              data.map((data, i) => (
+                <Img img={data.imgUrl} timestamp={data.timestamp} classs={data.class} key={i} />
               ))}
           </div>
           <Other />
