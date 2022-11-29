@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
+import "lightgallery.js/dist/css/lightgallery.css";
+import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery";
 
-function Img({ img, timestamp, classs }) {
+function Img({ img, timestamp, group, key }) {
   function prettyDate(date) {
     var months = [
       "Jan",
@@ -29,21 +31,22 @@ function Img({ img, timestamp, classs }) {
   }
   return (
     <>
-      <Fade top>
-        <div className="relative">
-          {" "}
+      <div className="image-list" title={prettyDate(new Date(timestamp))}>
+        <LightgalleryItem
+          group={group}
+          src={img}
+          thumb={key}
+          subHtml={"Double click to zoom."}
+        >
           <Image
+            className="w-full object-cover"
+            alt=""
             src={img}
             width={1000}
             height={1000}
-            objectFit="cover"
-            className={`.${classs}`}
           />
-          <div className="special bg-white text-[15px] absolute bottom-3 left-2 py-[5px] px-3 rounded-md">
-            {prettyDate(new Date(timestamp))}
-          </div>
-        </div>
-      </Fade>
+        </LightgalleryItem>
+      </div>
     </>
   );
 }

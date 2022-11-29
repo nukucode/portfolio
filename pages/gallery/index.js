@@ -5,6 +5,8 @@ import { db } from "../../firebaseConfig/Firebase";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Other from "../../Components/Other";
 import Img from "../../Components/Img";
+import "lightgallery.js/dist/css/lightgallery.css";
+import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery";
 
 function Projects({ result }) {
   const [data, setData] = useState([]);
@@ -58,13 +60,30 @@ function Projects({ result }) {
       </Head>
       <div>
         <Header />
-        <div className=" text-black space-y-5 mt-[3rem] max-w-7xl mx-auto  sm:px-10">
-          <h1 className="special">Life is like Pic - Ankit Yadav</h1>
-          <div className="gallery">
-            {data &&
-              data.map((data, i) => (
-                <Img img={data.imgUrl} timestamp={data.timestamp} classs={data.class} key={i} />
-              ))}
+        <div className=" text-black space-y-5 mt-[2rem] max-w-7xl mx-auto sm:px-10">
+          <div className="grid">
+            <LightgalleryProvider
+              lightgallerySettings={{
+                enableDrag: true,
+                enableTouch: true,
+                controls: true,
+                download: true,
+                swipeThreshold: 150,
+                getCaptionFromTitleOrAlt: true,
+                thumbnail: true,
+                plugins: ["lg-thumbnail.js", "lg-zoom.js"],
+              }}
+            >
+              {data &&
+                data.map((data, i) => (
+                  <Img
+                    img={data.imgUrl}
+                    timestamp={data.timestamp}
+                    key={i}
+                    group="images"
+                  />
+                ))}
+            </LightgalleryProvider>
           </div>
           <Other />
         </div>
