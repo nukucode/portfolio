@@ -52,7 +52,6 @@ const serializers = {
       }
       return (
         <SyntaxHighlighter
-          wrapLongLines
           customStyle={{
             padding: "2rem",
             lineHeight: "25px",
@@ -209,12 +208,13 @@ function Blog({ post }) {
                   serializers={serializers}
                 />
               </div>
-              <h1 className="uppercase text-[5vw] text-center font-extrabold">Thanks For Reading</h1>
+              <h1 className="uppercase text-[5vw] text-center font-extrabold pb-[2rem]">
+                Thanks For Reading
+              </h1>
             </div>
           </div>
-          <Other/>
+          <Other />
         </div>
-      
       </div>
     </>
   );
