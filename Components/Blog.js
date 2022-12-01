@@ -37,7 +37,7 @@ function Blog({ title, id, body, slug, index, timestamp }) {
           onClick={() => {
             router.push(`blogs/${slug.current}`);
           }}
-          className=" cursor-pointer transition-all duration-150 border flex flex-col justify-center  p-5  space-y-2 rounded-md h-auto  hover:border-green-400"
+          className=" cursor-pointer transition-all duration-150 border-2 flex flex-col justify-center  p-5  space-y-2 rounded-md h-auto  hover:border-black"
         >
           <h3 className="font-bold text-md text-black  sm:text-lg md:text-xl">
             {title}
