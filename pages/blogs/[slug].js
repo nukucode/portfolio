@@ -191,7 +191,6 @@ function Blog({ post }) {
               <div className="">
                 <Image
                   src={urlFor(post.mainImage).url()}
-                  objectFit="contain"
                   width={1000}
                   height={600}
                   alt={post.title}
