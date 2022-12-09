@@ -12,7 +12,7 @@ function Header() {
     <>
       <header className="max-w-6xl flex items-center sm:p-10 p-5 justify-between mx-auto">
         <Fade top>
-          <div className="w-14 h-14 border-green-400 border p-[.8px] rounded-full">
+          <div className="w-14 h-14 border-black border-2 p-[.8px] rounded-full">
             <Link href="/">
               <Image
                 src="https://avatars.githubusercontent.com/u/79178437?s=400&u=cff256e8ef77217e73d6645b4d4e4ce32f3f114b&v=4"

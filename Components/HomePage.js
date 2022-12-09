@@ -1,14 +1,12 @@
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
-import Image from "next/image";
 import Arrow from "./Arrow";
-import Footer from "./Footer";
 
 function HomePage() {
   return (
     <>
       <Fade bottom>
-        <div className="mx-auto flex justify-center flex-col home max-w-[650px] md:max-w-1xl lg:max-w-7xl">
+        <div className="mx-auto flex justify-center flex-col home max-w-[650px] md:max-w-1xl lg:max-w-7xl mt-[2rem] sm:mt-[0]">
           <div
             className="intro_text text-[3.5rem] md:text-[7vw]"
             data-text="I'm Ankit Yadav"
