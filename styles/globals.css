@@ -322,3 +322,13 @@ body {
 .quote::before{
   content: "👉 ";
 }
+
+@media (max-width:350px){
+  .size{
+    font-size: 15px;
+  }
+
+  .up{
+    margin-top: -20px;
+  }
+}

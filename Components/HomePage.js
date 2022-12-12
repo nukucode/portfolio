@@ -15,7 +15,7 @@ function HomePage() {
           </div>
 
           <div className="max-w-4xl">
-            <p className="text-gray-600">
+            <p className="text-gray-600 size">
               Frontend developer, UX architect and{" "}
               <span className="highlight__text">Javascript</span> enginner,{" "}
               <span className="highlight__text">Cyber Security</span> Expert, I
@@ -24,7 +24,7 @@ function HomePage() {
               and sharing the good news with people.{" "}
             </p>
 
-            <p className="mt-[2rem] text-gray-600">
+            <p className="mt-[2rem] text-gray-600 size">
               Working with my hands to make magic happen on the internet. View
               my{" "}
               <Link href="/projects">
