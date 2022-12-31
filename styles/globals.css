@@ -323,7 +323,7 @@ body {
   content: "👉 ";
 }
 
-@media (max-width:350px){
+@media (max-width:380px){
   .size{
     font-size: 15px;
   }
