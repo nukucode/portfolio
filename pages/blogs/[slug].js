@@ -10,6 +10,8 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 const BlockContent = require("@sanity/block-content-to-react");
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Link from "next/link";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
@@ -160,9 +162,17 @@ function Blog({ post }) {
         <div className="max-w-7xl my-[1rem] mx-auto">
           <div className="max-w-4xl mt-[3rem] mx-auto px-5 ">
             <div className="space-y-5">
-              <h1 className="uppercase text-[2rem] md:text-[2.8rem] text-black max-w-[700px] font-extrabold pb-[0.8rem]">
+              <RoughNotation
+                type="highlight"
+                show={true}
+                color="#000"
+                animationDelay={300}
+                animationDuration={500}
+                padding={5}
+                className="text-white uppercase text-[2rem] md:text-[2.8rem] text-black max-w-[700px] font-extrabold pb-[0.8rem]"
+              >
                 {post?.title}
-              </h1>
+              </RoughNotation>
               <div className=" ">
                 <div className="flex items-center space-x-3">
                   <Image

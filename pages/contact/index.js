@@ -5,8 +5,8 @@ import { db } from "../../firebaseConfig/Firebase";
 import { serverTimestamp, setDoc, doc } from "firebase/firestore";
 import Head from "next/head";
 import Link from "../../Components/Link";
-import Fade from 'react-reveal'
-
+import Fade from "react-reveal";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 function Index() {
   const [name, setName] = useState("");
@@ -86,7 +86,14 @@ function Index() {
         <div className="border-b pb-[6rem] max-w-7xl mx-auto py-[2rem] mt-[1rem] mb-[4rem] px-5 flex lg:items-center justify-center flex-col lg:flex-row lg:gap-[10rem] gap-[2rem]">
           <Fade bottom>
             <div className="max-w-[400px]">
-              <h1 className="text-[2.5rem] font-bold">Get in touch</h1>
+              <RoughNotation
+                show="underline"
+                animationDelay={400}
+                animationDuration={500}
+                className="text-[2.5rem] font-bold"
+              >
+                Get in touch
+              </RoughNotation>
               <p className="py-5">
                 I'm always curious to hear about collaboration opportunities.
                 Let's get in touch!
@@ -155,7 +162,16 @@ function Index() {
         </div>
 
         <div className="max-w-7xl mx-auto flex items-center justify-center flex-col gap-1 text-center">
-          <h1 className="font-bold text-2xl">Follow Me</h1>
+          <RoughNotation
+            type="highlight"
+            show={true}
+            color="#000"
+            animationDelay={300}
+            animationDuration={500}
+            className="font-bold text-2xl text-white"
+          >
+            Follow Me
+          </RoughNotation>
           <p className="p-5">You can also follow me social channels below</p>
           <div className="my-[3rem] px-5 sm:px-10 w-full grid xl:grid-cols-5 gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {" "}

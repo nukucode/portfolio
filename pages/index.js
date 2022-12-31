@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import HomePage from "../Components/HomePage";
 
 export default function Home() {
+
   const style =
     "font-weight: bold; font-size: 50px; text-shadow: -0.06em 0 red,  0.06em 0 cyan;";
   console.log("%c Developer!", style);

@@ -28,6 +28,7 @@
     "react-lightgallery": "^0.9.0",
     "react-portable-text": "^0.5.1",
     "react-reveal": "^1.2.2",
+    "react-rough-notation": "^1.0.3",
     "react-syntax-highlighter": "^15.5.0",
     "styled-components": "^5.3.5"
   },

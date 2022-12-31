@@ -1,6 +1,7 @@
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Arrow from "./Arrow";
+import { RoughNotation } from "react-rough-notation";
 
 function HomePage() {
   return (
@@ -17,11 +18,22 @@ function HomePage() {
           <div className="max-w-4xl">
             <p className="text-gray-600 size">
               Frontend developer, UX architect and{" "}
-              <span className="highlight__text">Javascript</span> enginner,{" "}
-              <span className="highlight__text">Cyber Security</span> Expert, I
-              also love <span className="highlight__text">Spirituality</span>,
-              listening to good <span className="highlight__text">music</span>{" "}
-              and sharing the good news with people.{" "}
+              <RoughNotation
+                type="highlight"
+                show={true}
+                color="#F0DB4F"
+                animationDelay={300}
+                animationDuration={500}
+                padding={10}
+                className="highlight__text text-[#323330]"
+              >
+                Javascript
+              </RoughNotation>{" "}
+              enginner, <span className="highlight__text">Cyber Security</span>{" "}
+              Expert, I also love{" "}
+              <span className="highlight__text">Spirituality</span>, listening
+              to good <span className="highlight__text">music</span> and sharing
+              the good news with people.{" "}
             </p>
 
             <p className="mt-[2rem] text-gray-600 size">
