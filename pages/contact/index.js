@@ -201,7 +201,7 @@ function Index() {
               title="Instagram"
               decription="Follow me on Instagram where I share image + video."
               button="Follow me"
-              link="https://instagram.com/therogersak"
+              link="https://instagram.com/raoankittt"
             />
             <Link
               icon="https://uploads-ssl.webflow.com/6310a2f29cd6000cb1750803/6310a2f39cd600d81b75088f_icon-7-social-media-video-x-template.svg"
