@@ -95,12 +95,12 @@ body {
 }
 .intro_text::before {
   left: 2px;
-  text-shadow: -1px 0 rgb(0, 255, 119);
+  text-shadow: -1px 0 #FF9933;
   animation: noise-anim-2 15s infinite linear alternate-reverse;
 }
 .intro_text::after {
   left: -2px;
-  text-shadow: 3px 0 red;
+  text-shadow: 3px 0 #FF4500;
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
 

@@ -2,9 +2,9 @@ import Head from "next/head";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import HomePage from "../Components/HomePage";
+import Skills from "../Components/Skills";
 
 export default function Home() {
-
   const style =
     "font-weight: bold; font-size: 50px; text-shadow: -0.06em 0 red,  0.06em 0 cyan;";
   console.log("%c Developer!", style);
@@ -54,7 +54,7 @@ export default function Home() {
       </Head>
       <div>
         {" "}
-          <Header />
+        <Header />
         <div className="max-w-5xl mx-auto">
           <HomePage />
           <Footer />

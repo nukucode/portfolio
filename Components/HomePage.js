@@ -17,7 +17,7 @@ function HomePage() {
 
           <div className="max-w-4xl">
             <p className="text-gray-600 size">
-              Frontend developer, UX architect and{" "}
+              Full Stack Developer 💚 , UX architect and{" "}
               <RoughNotation
                 type="highlight"
                 show={true}
@@ -32,7 +32,7 @@ function HomePage() {
               enginner, <span className="highlight__text">Cyber Security</span>{" "}
               Expert, I also love{" "}
               <span className="highlight__text">Spirituality</span>, listening
-              to good <span className="highlight__text">music</span> and sharing
+              to good <span className="highlight__text">Music</span> and sharing
               the good news with people.{" "}
             </p>
 
@@ -90,6 +90,7 @@ function HomePage() {
               link="https://therogersak.github.io/Rogers-Resume/"
               title="See Resume"
             />
+
           </div>
         </div>
       </Fade>
