@@ -58,7 +58,7 @@ function Footer() {
             </a>
           </Link>
 
-          <Link href="https://instagram.com/therogersak">
+          <Link href="https://instagram.com/raoankittt">
             <a
               className="p-3"
               target="_blank"
