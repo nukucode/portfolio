@@ -17,7 +17,7 @@ function HomePage() {
 
           <div className="max-w-4xl">
             <p className="text-gray-600 size">
-              Full Stack Developer 💚 , UX architect and{" "}
+              Full Stack Developer 💻 , UX architect and{" "}
               <RoughNotation
                 type="highlight"
                 show={true}
@@ -29,7 +29,7 @@ function HomePage() {
               >
                 Javascript
               </RoughNotation>{" "}
-              enginner, <span className="highlight__text">Cyber Security</span>{" "}
+              enginner, <span className="highlight__text">App Developer</span>{" "}
               Expert, I also love{" "}
               <span className="highlight__text">Spirituality</span>, listening
               to good <span className="highlight__text">Music</span> and sharing

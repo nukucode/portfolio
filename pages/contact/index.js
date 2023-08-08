@@ -194,7 +194,7 @@ function Index() {
               title="Twitter"
               decription="Follow me on Twitter where i build in Public."
               button="Follow me"
-              link="https://twitter.com/therogerak"
+              link="https://twitter.com/raoankittt"
             />
             <Link
               icon="https://uploads-ssl.webflow.com/6310a2f29cd6000cb1750803/6310a2f39cd60065b3750892_icon-4-social-media-video-x-template.svg"
@@ -208,7 +208,7 @@ function Index() {
               title="Linkedin"
               decription="Follow me on Linkedin for updates on written content."
               button="Follow me"
-              link="https://linkedin.com/in/therogersak"
+              link="https://linkedin.com/in/raoankittt"
             />
           </div>
         </div>

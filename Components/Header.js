@@ -60,7 +60,7 @@ function Header() {
               </a>
             </Link>
 
-            <Link href="/gallery">
+            {/* <Link href="/gallery">
               <a
                 className={
                   router.pathname == "/gallery" ? "active link" : "link"
@@ -68,7 +68,7 @@ function Header() {
               >
                 Gallery
               </a>
-            </Link>
+            </Link> */}
           </ul>
 
           <div className="z-[1100] md:hidden">

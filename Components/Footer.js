@@ -35,7 +35,7 @@ function Footer() {
             </a>
           </Link>
 
-          <Link href="https://linkedin.com/in/therogersak">
+          <Link href="https://linkedin.com/in/raoankittt">
             <a
               className="p-3"
               target="_blank"
@@ -46,7 +46,7 @@ function Footer() {
               <LinkedInIcon />
             </a>
           </Link>
-          <Link href="https://github.com/therogersak">
+          <Link href="https://github.com/raoankittt">
             <a
               className="p-3"
               target="_blank"
