@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>raoankit - Software Engineer</title>
-        <meta name="title" content="raoankit - Software Engineer" />
+        <title>Ankit Yadav - Software Engineer</title>
+        <meta name="title" content="Ankit Yadav - Software Engineer" />
         <meta
           name="keywords"
           content="raoankit, raoankit website, rogers, ankit yadav, therogers, raoankit official, usersploit, hacker , coder, programmer , raoankit , rogersak , raoankit instagram, therogers github, github codes , portfolio raoankit, portfolio"
