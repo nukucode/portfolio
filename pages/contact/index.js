@@ -6,7 +6,7 @@ import { serverTimestamp, setDoc, doc } from "firebase/firestore";
 import Head from "next/head";
 import Link from "../../Components/Link";
 import Fade from "react-reveal";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 
 function Index() {
   const [name, setName] = useState("");
@@ -40,11 +40,11 @@ function Index() {
   return (
     <>
       <Head>
-        <title>therogersak - Software Engineer</title>
-        <meta name="title" content="therogersak - Software Engineer" />
+        <title>Ankit Yadav - Software Engineer</title>
+        <meta name="title" content="Ankit Yadav - Software Engineer" />
         <meta
           name="keywords"
-          content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official, usersploit, hacker , coder, programmer , therogersak , rogersak , therogersak instagram, therogers github, github codes , portfolio therogersak, portfolio"
+          content="raoankittt, raoankittt website, rogers, ankit yadav, therogers, raoankittt official, usersploit, hacker , coder, programmer , raoankittt , rogersak , raoankittt instagram, therogers github, github codes , portfolio raoankittt, portfolio"
         />
         <meta
           name="description"
@@ -52,25 +52,25 @@ function Index() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://therogersak.netlify.app/" />
-        <meta property="og:title" content="therogersak - Software Engineer" />
+        <meta property="og:url" content="https://raoankit.netlify.app/" />
+        <meta property="og:title" content="Ankit Yadav - Software Engineer" />
         <meta
           property="og:description"
-          content="Software Engineer based in India. therogersak software enginner. therogersak"
+          content="Software Engineer based in India. raoankittt software enginner. raoankittt"
         />
         <meta
           property="og:image"
-          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
+          content="https://github.com/raoankittt/portfolie-using-next-js/raw/main/portfolio.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://therogersak.netlify.app/"
+          content="https://raoankittt.netlify.app/"
         />
         <meta
           property="twitter:title"
-          content="therogersak - Software Engineer"
+          content="raoankittt - Software Engineer"
         />
         <meta
           property="twitter:description"
@@ -78,7 +78,7 @@ function Index() {
         />
         <meta
           property="twitter:image"
-          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
+          content="https://github.com/raoankittt/portfolie-using-next-js/raw/main/portfolio.png"
         />
       </Head>
       <div className="text-black h-auto">
@@ -98,11 +98,11 @@ function Index() {
                 I'm always curious to hear about collaboration opportunities.
                 Let's get in touch!
               </p>
-              <a href="mailto:therogersak@gmail.com">
+              <a href="mailto:raoankittt@gmail.com">
                 <button className="p-[1rem] rounded-2xl bg-[#131920] flex items-center gap-3">
                   <EnvelopeIcon className="h-10 bg-green-400 p-2 rounded-full" />
                   <span className="font-bold text-white">
-                    therogersak@gmail.com
+                    raoankittt@gmail.com
                   </span>
                 </button>
               </a>
@@ -180,14 +180,14 @@ function Index() {
               title="Youtube"
               decription="Subcribe to my Youtube channel for video content."
               button="Subscribe"
-              link="https://youtube.com/@therogersak"
+              link="https://youtube.com/@raoankittt"
             />
             <Link
               icon="https://uploads-ssl.webflow.com/6310a2f29cd6000cb1750803/6310a2f39cd600ce4475088e_icon-2-social-media-video-x-template.svg"
               title="Facebook"
               decription="Follow me on Facebook for updates on written content."
               button="Follow me"
-              link="https://facebook.com/therogersak"
+              link="https://facebook.com/raoankittt"
             />
             <Link
               icon="https://uploads-ssl.webflow.com/6310a2f29cd6000cb1750803/6310a2f39cd60000d5750891_icon-3-social-media-video-x-template.svg"

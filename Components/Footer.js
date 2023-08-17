@@ -11,7 +11,7 @@ function Footer() {
     <>
       <Fade bottom>
         <footer className="footer lg:max-w-7xl mx-auto">
-          <Link href="https://twitter.com/therogersak">
+          <Link href="https://twitter.com/raoankittt">
             <a
               className="p-3"
               target="_blank"

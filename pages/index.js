@@ -2,7 +2,6 @@ import Head from "next/head";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import HomePage from "../Components/HomePage";
-import Skills from "../Components/Skills";
 
 export default function Home() {
   const style =
@@ -11,11 +10,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>therogersak - Software Engineer</title>
-        <meta name="title" content="therogersak - Software Engineer" />
+        <title>raoankit - Software Engineer</title>
+        <meta name="title" content="raoankit - Software Engineer" />
         <meta
           name="keywords"
-          content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official, usersploit, hacker , coder, programmer , therogersak , rogersak , therogersak instagram, therogers github, github codes , portfolio therogersak, portfolio"
+          content="raoankit, raoankit website, rogers, ankit yadav, therogers, raoankit official, usersploit, hacker , coder, programmer , raoankit , rogersak , raoankit instagram, therogers github, github codes , portfolio raoankit, portfolio"
         />
         <meta
           name="description"
@@ -23,25 +22,25 @@ export default function Home() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://therogersak.netlify.app/" />
-        <meta property="og:title" content="therogersak - Software Engineer" />
+        <meta property="og:url" content="https://raoankit.netlify.app/" />
+        <meta property="og:title" content="Ankit Yadav - Software Engineer" />
         <meta
           property="og:description"
-          content="Software Engineer based in India. therogersak software enginner. therogersak"
+          content="Software Engineer based in India. raoankit software enginner. raoankit"
         />
         <meta
           property="og:image"
-          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
+          content="https://github.com/raoankit/portfolie-using-next-js/raw/main/portfolio.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://therogersak.netlify.app/"
+          content="https://raoankit.netlify.app/"
         />
         <meta
           property="twitter:title"
-          content="therogersak - Software Engineer"
+          content="raoankit - Software Engineer"
         />
         <meta
           property="twitter:description"
@@ -49,7 +48,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png"
+          content="https://github.com/raoankit/portfolie-using-next-js/raw/main/portfolio.png"
         />
       </Head>
       <div>
