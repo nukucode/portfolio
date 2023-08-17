@@ -43,42 +43,19 @@ function Index() {
         <title>Ankit Yadav - Software Engineer</title>
         <meta name="title" content="Ankit Yadav - Software Engineer" />
         <meta
-          name="keywords"
-          content="raoankittt, raoankittt website, rogers, ankit yadav, therogers, raoankittt official, usersploit, hacker , coder, programmer , raoankittt , rogersak , raoankittt instagram, therogers github, github codes , portfolio raoankittt, portfolio"
-        />
-        <meta
           name="description"
           content="Software Engineer based in India, an undergraduate student at Self."
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://raoankit.netlify.app/" />
+        <meta
+          property="og:url"
+          content="https://raoankit.vercel.app/contact"
+        />
         <meta property="og:title" content="Ankit Yadav - Software Engineer" />
         <meta
           property="og:description"
-          content="Software Engineer based in India. raoankittt software enginner. raoankittt"
-        />
-        <meta
-          property="og:image"
-          content="https://github.com/raoankittt/portfolie-using-next-js/raw/main/portfolio.png"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://raoankittt.netlify.app/"
-        />
-        <meta
-          property="twitter:title"
-          content="raoankittt - Software Engineer"
-        />
-        <meta
-          property="twitter:description"
           content="Software Engineer based in India, an undergraduate student at Self."
-        />
-        <meta
-          property="twitter:image"
-          content="https://github.com/raoankittt/portfolie-using-next-js/raw/main/portfolio.png"
         />
       </Head>
       <div className="text-black h-auto">

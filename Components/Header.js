@@ -52,23 +52,11 @@ function Header() {
 
             <Link href="/blogs">
               <a
-                className={
-                  router.pathname == "/blogs" ? "active link" : "link"
-                }
+                className={router.pathname == "/blogs" ? "active link" : "link"}
               >
                 Blog
               </a>
             </Link>
-
-            {/* <Link href="/gallery">
-              <a
-                className={
-                  router.pathname == "/gallery" ? "active link" : "link"
-                }
-              >
-                Gallery
-              </a>
-            </Link> */}
           </ul>
 
           <div className="z-[1100] md:hidden">

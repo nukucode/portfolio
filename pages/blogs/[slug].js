@@ -129,7 +129,7 @@ function Blog({ post }) {
         <meta name="title" content={post?.title} />
         <meta
           name="keywords"
-          content="therogersak, therogersak website, rogers, ankit yadav, therogers, therogersak official, usersploit, hacker , coder, programmer , therogersak , rogersak , therogersak instagram, therogers github, github codes , portfolio therogersak, portfolio"
+          content="raoankit, raoankit website, rogers, ankit yadav, therogers, raoankit official, usersploit, hacker , coder, programmer , raoankit , rogersak , raoankit instagram, therogers github, github codes , portfolio raoankit, portfolio"
         />
         <meta
           name="description"
@@ -137,18 +137,18 @@ function Blog({ post }) {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://therogersak.netlify.app/" />
+        <meta property="og:url" content="https://raoankit.vercel.app/" />
         <meta property="og:title" content={post?.title} />
         <meta
           property="og:description"
-          content="Software Engineer based in India. therogersak software enginner. therogersak"
+          content="Software Engineer based in India. raoankit software enginner. therogersak"
         />
         <meta property="og:image" content={urlFor(post.mainImage).url()} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://therogersak.netlify.app/"
+          content="https://raoankit.vercel.app/"
         />
         <meta property="twitter:title" content={post?.title} />
         <meta

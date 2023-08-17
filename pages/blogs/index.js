@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import Blog from "../../Components/Blog";
 import Fade from "react-reveal/Fade";
@@ -17,16 +16,14 @@ function Index({ posts }) {
     if (data === "") {
       return data;
     } else {
-      return (
-        data?.title.toLowerCase().includes(query.toLowerCase())
-      );
+      return data?.title.toLowerCase().includes(query.toLowerCase());
     }
   });
   return (
     <>
       <Head>
-        <title>therogersak - Software Engineer</title>
-        <meta name="title" content="therogersak - Software Engineer" />
+        <title>Ankit Yadav - Software Engineer</title>
+        <meta name="title" content="Ankit Yadav - Software Engineer" />
         <meta
           name="description"
           content="Software Engineer based in India, an undergraduate student at Self."
@@ -35,38 +32,16 @@ function Index({ posts }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://therogersak.netlify.app/blogs"
+          content="https://raoankit.vercel.app/blogs"
         />
-        <meta property="og:title" content="therogersak - Software Engineer" />
+        <meta property="og:title" content="Ankit Yadav - Software Engineer" />
         <meta
           property="og:description"
           content="Software Engineer based in India, an undergraduate student at Self."
         />
-        <meta
-          property="og:image"
-          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://therogersak.netlify.app/blogs"
-        />
-        <meta
-          property="twitter:title"
-          content="therogersak - Software Engineer"
-        />
-        <meta
-          property="twitter:description"
-          content="Software Engineer based in India, an undergraduate student at Self."
-        />
-        <meta
-          property="twitter:image"
-          content="https://github.com/therogersak/portfolie-using-next-js/raw/main/portfolio.png?raw=true"
-        />
       </Head>
       <div>
-          <Header />
+        <Header />
         <div className=" text-black max-w-7xl mt-[2rem] space-y-5 mx-auto  sm:px-10">
           <div className="space-y-5 px-5  border-b border-gray-800 pb-5">
             <Fade left>

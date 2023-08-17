@@ -87,8 +87,8 @@ function HomePage() {
             </p>
 
             <Arrow
-              link="https://therogersak.github.io/Rogers-Resume/"
-              title="See Resume"
+              link="https://github.com/raoankittt"
+              title="Github"
             />
 
           </div>
