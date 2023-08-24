@@ -7,11 +7,9 @@ import Fade from "react-reveal/Fade";
 import Other from "../../Components/Other";
 import client from "../../client";
 import groq from "groq";
+import { NextSeo } from "next-seo";
 function Index({ posts }) {
   const [query, setQuery] = useState("");
-
-  console.log(posts);
-
   const Search = posts.filter((data) => {
     if (data === "") {
       return data;
@@ -21,25 +19,11 @@ function Index({ posts }) {
   });
   return (
     <>
-      <Head>
-        <title>Ankit Yadav - Software Engineer</title>
-        <meta name="title" content="Ankit Yadav - Software Engineer" />
-        <meta
-          name="description"
-          content="Software Engineer based in India, an undergraduate student at Self."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://raoankit.vercel.app/blogs"
-        />
-        <meta property="og:title" content="Ankit Yadav - Software Engineer" />
-        <meta
-          property="og:description"
-          content="Software Engineer based in India, an undergraduate student at Self."
-        />
-      </Head>
+      <NextSeo
+        title="Articles - Ankit Yadav"
+        description="This is where I share my writings on programming, tutorials, and my experiences."
+        canonical="https://raoankit.vercel.app/blogs"
+      />
       <div>
         <Header />
         <div className=" text-black max-w-7xl mt-[2rem] space-y-5 mx-auto  sm:px-10">

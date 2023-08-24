@@ -7,6 +7,7 @@ import Head from "next/head";
 import Link from "../../Components/Link";
 import Fade from "react-reveal";
 import { RoughNotation } from "react-rough-notation";
+import { NextSeo } from "next-seo";
 
 function Index() {
   const [name, setName] = useState("");
@@ -39,25 +40,11 @@ function Index() {
   };
   return (
     <>
-      <Head>
-        <title>Ankit Yadav - Software Engineer</title>
-        <meta name="title" content="Ankit Yadav - Software Engineer" />
-        <meta
-          name="description"
-          content="Software Engineer based in India, an undergraduate student at Self."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://raoankit.vercel.app/contact"
-        />
-        <meta property="og:title" content="Ankit Yadav - Software Engineer" />
-        <meta
-          property="og:description"
-          content="Software Engineer based in India, an undergraduate student at Self."
-        />
-      </Head>
+      <NextSeo
+        title="Get in touch - Ankit Yadav"
+        description="I'm always curious to hear about collaboration opportunities. Let's get in touch!"
+        canonical="https://raoankit.vercel.app/contact"
+      />
       <div className="text-black h-auto">
         <Header />
         <div className="border-b pb-[6rem] max-w-7xl mx-auto py-[2rem] mt-[1rem] mb-[4rem] px-5 flex lg:items-center justify-center flex-col lg:flex-row lg:gap-[10rem] gap-[2rem]">

@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
 import Image from "next/image";
 import Other from "../../Components/Other";
 import client from "../../client";
@@ -10,7 +9,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 const BlockContent = require("@sanity/block-content-to-react");
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Link from "next/link";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -122,38 +121,33 @@ function Blog({ post }) {
     );
   }
 
+
   return (
     <>
       <Head>
         <title>{post?.title}</title>
         <meta name="title" content={post?.title} />
-        <meta
-          name="keywords"
-          content="raoankit, raoankit website, rogers, ankit yadav, therogers, raoankit official, usersploit, hacker , coder, programmer , raoankit , rogersak , raoankit instagram, therogers github, github codes , portfolio raoankit, portfolio"
-        />
-        <meta
-          name="description"
-          content="Software Engineer based in India, an undergraduate student at Self."
-        />
-
+        <meta name="description" content={post?.title + "By Ankit Yadav"} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://raoankit.vercel.app/" />
+        <meta
+          property="og:url"
+          content={`https://raoankit.vercel.app/blogs/${post?.slug?.current}`}
+        />
         <meta property="og:title" content={post?.title} />
         <meta
           property="og:description"
-          content="Software Engineer based in India. raoankit software enginner. therogersak"
+          content={post?.title + "By Ankit Yadav"}
         />
         <meta property="og:image" content={urlFor(post.mainImage).url()} />
-
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://raoankit.vercel.app/"
+          ontent={`https://raoankit.vercel.app/blogs/${post?.slug?.current}`}
         />
         <meta property="twitter:title" content={post?.title} />
         <meta
           property="twitter:description"
-          content="Software Engineer based in India, an undergraduate student at Self."
+          content={post?.title + "By Ankit Yadav"}
         />
         <meta property="twitter:image" content={urlFor(post.mainImage).url()} />
       </Head>
