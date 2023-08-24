@@ -23,6 +23,7 @@
     "framer-motion": "^7.2.1",
     "groq": "^2.29.3",
     "next": "12.2.5",
+    "next-seo": "^6.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-lightgallery": "^0.9.0",
