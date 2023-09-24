@@ -29,7 +29,7 @@ function HomePage() {
               >
                 Javascript
               </RoughNotation>{" "}
-              enginner, <span className="highlight__text">App Developer</span>{" "}
+              enginner, <span className="highlight__text">Developer</span>{" "}
               Expert, I also love{" "}
               <span className="highlight__text">Spirituality</span>, listening
               to good <span className="highlight__text">Music</span> and sharing
@@ -37,8 +37,8 @@ function HomePage() {
             </p>
 
             <p className="mt-[2rem] text-gray-600 size">
-              Working with my hands to make magic happen on the internet. View
-              my{" "}
+              A minimalist obsessed with the web world, exploring design with
+              curiosity. View my{" "}
               <Link href="/projects">
                 <a aria-label="Go to Projects Page">
                   <button className="btn" type="button" tabIndex="-1">
@@ -86,16 +86,11 @@ function HomePage() {
               .{" "}
             </p>
 
-            <Arrow
-              link="https://github.com/raoankitx"
-              title="Github"
-            />
-
+            <Arrow link="https://github.com/raoankitx" title="Github" />
           </div>
         </div>
       </Fade>
     </>
   );
 }
-
 export default HomePage;

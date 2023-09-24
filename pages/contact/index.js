@@ -7,6 +7,7 @@ import Link from "../../Components/Link";
 import Fade from "react-reveal";
 import { RoughNotation } from "react-rough-notation";
 import { NextSeo } from "next-seo";
+import MyDialog from "../../Components/Dialog";
 
 function Index() {
   const [name, setName] = useState("");
@@ -14,6 +15,7 @@ function Index() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [isSend, setIsSend] = useState(false);
 
   const contactHandler = async (e) => {
     e.preventDefault();
@@ -36,6 +38,7 @@ function Index() {
     setSubject("");
     setMessage("");
     setLoading(false);
+    setIsSend(true);
   };
   return (
     <>
@@ -61,7 +64,7 @@ function Index() {
                 I'm always curious to hear about collaboration opportunities.
                 Let's get in touch!
               </p>
-              <a href="mailto:raoankittt@gmail.com">
+              <a href="mailto:therogersak@gmail.com">
                 <button className="p-[1rem] rounded-2xl bg-[#131920] flex items-center gap-3">
                   <EnvelopeIcon className="h-10 bg-green-400 p-2 rounded-full" />
                   <span className="font-bold text-white">
@@ -164,7 +167,7 @@ function Index() {
               title="Instagram"
               decription="Follow me on Instagram where I share image + video."
               button="Follow me"
-              link="https://instagram.com/raoankittt"
+              link="https://instagram.com/raoankittx"
             />
             <Link
               icon="https://uploads-ssl.webflow.com/6310a2f29cd6000cb1750803/6310a2f39cd600d81b75088f_icon-7-social-media-video-x-template.svg"
@@ -175,6 +178,16 @@ function Index() {
             />
           </div>
         </div>
+        {isSend && (
+          <MyDialog
+            isOpen={isSend}
+            setIsOpen={() => setIsSend(false)}
+            title={"Message Send Successful"}
+            description={
+              "💖 Thank You!, For Sharing Your Feelings. Thank You So Much!"
+            }
+          />
+        )}
       </div>
     </>
   );
