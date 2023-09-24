@@ -2,9 +2,9 @@
 
 ---
 
-## ⚡ therogersak
+## ⚡ raoankit
 
-I've decided to open-source my latest portfolio website! it has dynamic content management to add projects and posts using Contentful CMS, and was built using Next.js and Chakra UI.
+I've decided to open-source my latest portfolio website! it has dynamic content management to add projects and posts using Contentful CMS, and was built using Next.js and Tailwind Css.
 
 Refer to [Next.js](https://nextjs.org/docs/) and [Tailwind Css](https://tailwindcss.com/) documentation to learn more.
 
@@ -23,12 +23,12 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 4. Go to content model and start to add content type  <br>
 
 > 📌  In this portfolio website, it has 5 Content type which is:
-> 1. BlogPosts
-> 2. FeaturedProjects
+> 1. Articles
+> 2. Featured Projects
 > 3. Projects
 > 4. Introduction
 > 5. ContactMe
-> 
+>
 
 
 
