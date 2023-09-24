@@ -6,6 +6,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+
 function Footer() {
   return (
     <>
@@ -46,7 +47,7 @@ function Footer() {
               <LinkedInIcon />
             </a>
           </Link>
-          <Link href="https://github.com/raoankittt">
+          <Link href="https://github.com/raoankitx">
             <a
               className="p-3"
               target="_blank"
@@ -58,7 +59,7 @@ function Footer() {
             </a>
           </Link>
 
-          <Link href="https://instagram.com/raoankittt">
+          <Link href="https://instagram.com/raoankittx">
             <a
               className="p-3"
               target="_blank"

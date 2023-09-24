@@ -87,7 +87,7 @@ function HomePage() {
             </p>
 
             <Arrow
-              link="https://github.com/raoankittt"
+              link="https://github.com/raoankitx"
               title="Github"
             />
 

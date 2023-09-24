@@ -3,7 +3,6 @@ import Header from "../../Components/Header";
 import { ArrowUpRightIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { db } from "../../firebaseConfig/Firebase";
 import { serverTimestamp, setDoc, doc } from "firebase/firestore";
-import Head from "next/head";
 import Link from "../../Components/Link";
 import Fade from "react-reveal";
 import { RoughNotation } from "react-rough-notation";
