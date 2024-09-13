@@ -32,7 +32,8 @@
     "react-reveal": "^1.2.2",
     "react-rough-notation": "^1.0.3",
     "react-syntax-highlighter": "^15.5.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

@@ -6,7 +6,7 @@ import { db } from "../../firebaseConfig/Firebase";
 
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Other from "../../Components/Other";
-function Projects({ result }) {
+function Index({ result }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {

@@ -35,7 +35,7 @@ function Blog({ title, id, body, slug, index, timestamp }) {
       <Fade top>
         <div
           onClick={() => {
-            router.push(`blogs/${slug.current}`);
+            router.push(`articles/${slug.current}`);
           }}
           className=" cursor-pointer transition-all duration-150 border-2 flex flex-col justify-center  p-5  space-y-2 rounded-md h-auto  hover:border-black"
         >

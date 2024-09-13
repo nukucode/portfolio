@@ -11,7 +11,7 @@ function Blogs({ posts }) {
             📰 Latest Article.
           </h3>
           <div>
-            <Link href="/blogs" passHref className="point">
+            <Link href="/articles" passHref className="point">
               <a>
                 {" "}
                 Read all articles <ChevronRightIcon />

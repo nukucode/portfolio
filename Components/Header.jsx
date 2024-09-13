@@ -50,7 +50,7 @@ function Header() {
               </a>
             </Link>
 
-            <Link href="/blogs">
+            <Link href="/articles">
               <a
                 className={router.pathname == "/articles" ? "active link" : "link"}
               >

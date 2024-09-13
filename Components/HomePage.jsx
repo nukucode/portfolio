@@ -29,11 +29,10 @@ function HomePage() {
               >
                 Javascript
               </RoughNotation>{" "}
-              enginner, <span className="highlight__text">Developer</span>{" "}
-              Expert, I also love{" "}
-              <span className="highlight__text">Spirituality</span>, listening
-              to good <span className="highlight__text">Music</span> and sharing
-              the good news with people.{" "}
+              engineer, <span className="highlight__text">Developer</span>{" "}
+              Expert, I also love <span className="highlight__text">Anime</span>
+              , listening to good <span className="highlight__text">Music</span>{" "}
+              and sharing the good news with people.{" "}
             </p>
 
             <p className="mt-[2rem] text-gray-600 size">
@@ -47,7 +46,7 @@ function HomePage() {
                 </a>
               </Link>
               ,{" "}
-              <Link href="/blogs">
+              <Link href="/articles">
                 <a aria-label="Go to Articles Page And Check What I Read">
                   <button className="btn" type="button" tabIndex="-1">
                     Articles
@@ -55,7 +54,7 @@ function HomePage() {
                 </a>
               </Link>
               ,{" "}
-              <Link href="https://therogersak.github.io/Rogers-Resume/">
+              <Link href="https://drive.google.com/file/d/1Bl7r6c7SARKUgcfqnXygmxSeSsvqTM_6/view?usp=sharing">
                 <a aria-label="Go to Resume Page">
                   <button className="btn" type="button" tabIndex="-1">
                     Resume

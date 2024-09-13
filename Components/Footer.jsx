@@ -12,7 +12,7 @@ function Footer() {
     <>
       <Fade bottom>
         <footer className="footer lg:max-w-7xl mx-auto">
-          <Link href="https://twitter.com/raoankittt">
+          <Link href="https://twitter.com/nukucode">
             <a
               className="p-3"
               target="_blank"
@@ -36,7 +36,7 @@ function Footer() {
             </a>
           </Link>
 
-          <Link href="https://linkedin.com/in/raoankittt">
+          <Link href="https://linkedin.com/in/nukucode">
             <a
               className="p-3"
               target="_blank"
@@ -47,7 +47,7 @@ function Footer() {
               <LinkedInIcon />
             </a>
           </Link>
-          <Link href="https://github.com/raoankitx">
+          <Link href="https://github.com/nukucode">
             <a
               className="p-3"
               target="_blank"
@@ -59,7 +59,7 @@ function Footer() {
             </a>
           </Link>
 
-          <Link href="https://instagram.com/raoankittx">
+          <Link href="https://instagram.com/blue.otakuu">
             <a
               className="p-3"
               target="_blank"
@@ -71,7 +71,7 @@ function Footer() {
             </a>
           </Link>
 
-          <Link href="https://youtube.com/@therogersak">
+          <Link href="https://youtube.com/nukucode">
             <a
               className="p-3"
               target="_blank"

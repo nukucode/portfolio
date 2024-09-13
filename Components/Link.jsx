@@ -16,6 +16,7 @@ function Link({ icon, title, decription, button, link }) {
                   width={1000}
                   height={1000}
                   className="rounded-full"
+                  alt="icon"
                 />
               </div>
               <h3 className="font-bold text-xl">{title}</h3>

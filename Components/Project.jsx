@@ -42,7 +42,9 @@ function Project({
           </div>
           <div className="space-y-3 px-3">
             <div className="flex items-center justify-between flex-col gap-3 sm:flex-row my-2">
-              <h1 className="font-bold text-black text-md  sm:text-lg">{title}</h1>
+              <h1 className="font-bold text-black text-md  sm:text-lg">
+                {title}
+              </h1>
               <div className="space-x-5 mb-3">
                 <Link href={`${github}`} passHref>
                   <a target="_blank" rel="noopener noreferrer">
@@ -59,7 +61,10 @@ function Project({
             <div className="flex items-center space-x-5 overflow-x-scroll scrollbar-hide">
               {tag &&
                 tag.map((name) => (
-                  <div className="border border-green-300 text-green-400 py-1 px-3 rounded-full font-bold capitalize whitespace-nowrap">
+                  <div
+                    key={name}
+                    className="border border-green-300 text-green-400 py-1 px-3 rounded-full font-bold capitalize whitespace-nowrap"
+                  >
                     <span className="text-sm">{name}</span>
                   </div>
                 ))}
