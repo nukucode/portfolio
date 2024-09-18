@@ -11,7 +11,7 @@
 
 @layer components {
     .link {
-        @apply font-otterco text-[14px] text-linkColor;
+        @apply font-otterco text-[14px] text-linkColor hover:underline transition-all duration-200 ease-in;
     }
 
     .icon {
