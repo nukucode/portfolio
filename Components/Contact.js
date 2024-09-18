@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "boxicons";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
 function Contact() {
   return (

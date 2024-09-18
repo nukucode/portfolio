@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "../components/Home.jsx";
-import Contact from "../components/Contact.jsx";
+import Home from "../components/Home.js";
+import Contact from "../components/Contact.js";
 
 function index() {
   return (

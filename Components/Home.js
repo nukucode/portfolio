@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Img from ".././public/images/gojo.jpeg";
-import Header from "../components/Header";
+import Header from "./Header";
 
 function Home() {
   return (
