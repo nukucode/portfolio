@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import "boxicons";
 import Footer from "./Footer";
@@ -29,7 +28,11 @@ function Contact() {
               </span>
             </button>
           </Link>
-          <Link className="button__div" href="/">
+          <Link
+            className="button__div"
+            href="https://wa.me/91+7427835521"
+            target="_blank"
+          >
             <button className="button bg-white">
               <span className="button__text text-black hover:underline transition-all ease-in">
                 Whatsapp
