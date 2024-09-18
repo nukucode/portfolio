@@ -1,90 +1,54 @@
-import Fade from "react-reveal/Fade";
+"use client";
+
 import Link from "next/link";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import React from "react";
 
 function Footer() {
+  const getFullYear = () => new Date().getFullYear();
   return (
-    <>
-      <Fade bottom>
-        <footer className="footer lg:max-w-7xl mx-auto">
-          <Link href="https://twitter.com/nukucode">
-            <a
-              className="p-3"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Go To Ankit Yadav Twitter Page"
-              title="Twitter Page"
-            >
-              <TwitterIcon />
-            </a>
-          </Link>
+    <footer className="flex items-center justify-center py-[3.5rem]">
+      <div className="w-[90%] flex items-center justify-between border-gray border-t-[0.1px] pt-[2.5rem]">
+        <div>
+          <p className="font-otterco text-[14px] text-linkColor">
+            <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />{" "}
+            {getFullYear()} All rights reserved.
+          </p>
+        </div>
 
-          <Link href="https://facebook.com/therogersak">
-            <a
-              className="p-3"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Go To Ankit Yadav Facebook Page"
-              title="Facebook Page"
-            >
-              <FacebookOutlinedIcon />
-            </a>
-          </Link>
-
-          <Link href="https://linkedin.com/in/nukucode">
-            <a
-              className="p-3"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Go To Ankit Yadav Linkedin Page"
-              title="Linkedin Page"
-            >
-              <LinkedInIcon />
-            </a>
-          </Link>
-          <Link href="https://github.com/nukucode">
-            <a
-              className="p-3"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Go To Ankit Yadav Github Page"
-              title="Github Page"
-            >
-              <GitHubIcon />
-            </a>
-          </Link>
-
-          <Link href="https://instagram.com/blue.otakuu">
-            <a
-              className="p-3"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Go To Ankit Yadav Instagram Page"
-              title="Instagram Page"
-            >
-              <InstagramIcon />
-            </a>
-          </Link>
-
-          <Link href="https://youtube.com/nukucode">
-            <a
-              className="p-3"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Go To Ankit Yadav Youtube Page"
-              title="Youtube Page"
-            >
-              <YouTubeIcon />
-            </a>
-          </Link>
-        </footer>
-      </Fade>
-    </>
+        <div className="flex items-center space-x-1 md:space-x-3">
+          <div>
+            <Link href="https://linkedin.com/in/nukucode" target="_blank">
+              <p className="link hidden md:block">Linkedin</p>
+              <div className="icon">
+                <box-icon
+                  type="logo"
+                  name="linkedin-square"
+                  color="#242424"
+                ></box-icon>
+              </div>
+            </Link>
+          </div>
+          <span className="text-[14px] hidden md:block">/</span>
+          <div>
+            <Link href="https://github.com/nukucode" target="_blank">
+              <p className="link hidden md:block">Github</p>
+              <div className="icon">
+                <box-icon type="logo" name="github" color="#242424" />
+              </div>
+            </Link>
+          </div>
+          <span className="text-[14px] hidden md:block">/</span>
+          <div>
+            <Link href="https://x.com/nukucode" target="_blank">
+              <p className="link hidden md:block">Twitter</p>
+              <div className="icon">
+                <box-icon name="twitter" type="logo" color="#242424" />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
 

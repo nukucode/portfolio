@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@layer components {
+    .link {
+        @apply font-otterco text-[14px] text-linkColor;
+    }
+
+    .icon {
+        @apply bg-white md:hidden w-[40px] h-[40px] sm:w-[47px] sm:h-[47px] rounded-full flex items-center justify-center border-borderColor border-[3px]
+    }
+
+    .button__div {
+        @apply border-4 border-borderColor rounded-full
+    }
+
+    .button__div .button {
+        @apply h-[52px] rounded-full w-[120px]
+    }
+
+    .button__div .button .button__text {
+        @apply font-otterco text-[12px]
+    }
+}
