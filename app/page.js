@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../components/Home";
 import Contact from "../components/Contact";
 
-function Home() {
+function Index() {
   return (
     <div>
       <Home />
@@ -10,4 +10,4 @@ function Home() {
     </div>
   );
 }
-export default Home;
+export default Index;

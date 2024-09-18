@@ -1,11 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true,
-    concurrentFeatures: false, // <- Turn this option to false
-    serverComponents: true,
-  },
   swcMinify: true,
   images: {
     domains: [
