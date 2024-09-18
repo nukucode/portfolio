@@ -9,7 +9,7 @@ import Header from "./Header";
 
 function Home() {
   return (
-    <section className="bg-[#F2F1F0] rounded-bl-[100px] h-[650px] sm:h-[742px] rounded-br-[100px]">
+    <section className="bg-[#F2F1F0] rounded-bl-[90px] h-[650px] sm:h-[742px] rounded-br-[90px]">
       <Header />
       <div className=" mt-[130px] md:mt-[90px] flex flex-col items-center justify-center space-y-4">
         <div className="relative">
