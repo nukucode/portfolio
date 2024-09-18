@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import "boxicons";
 import Footer from "./Footer";
 
 function Contact() {
@@ -22,7 +21,7 @@ function Contact() {
         <div className="flex items-center space-x-3 pt-2">
           <Link className="button__div" href="mailto:whiteblueotaku@gmail.com">
             <button className="button bg-black flex items-center justify-center space-x-2">
-              <box-icon name="envelope" color="#ffffff" />
+              {/* <box-icon name="envelope" color="#ffffff" /> */}
               <span className="button__text text-white hover:underline transition-all ease-in">
                 Email Me
               </span>

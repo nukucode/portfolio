@@ -2,19 +2,12 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import "boxicons";
+
 
 function Header() {
   const [copy, setCopy] = useState(false);
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText("whiteblueotaku@gmail.com");
-    setCopy(true);
-    setInterval(() => {
-      setCopy(false);
-    }, 3000);
-  };
-
+ 
   return (
     <header className="w-full flex items-center justify-center">
       <div className="min-w-[90%] pt-[40px] flex items-center justify-between ">
@@ -26,7 +19,7 @@ function Header() {
               </p>
             </div>
             <button
-              onClick={copyEmail}
+             
               className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full "
             >
               <span className="font-otterco font-medium text-[12px] hidden md:block">
@@ -55,7 +48,7 @@ function Header() {
             <Link href="https://linkedin.com/in/nukucode" target="_blank">
               <p className="link hidden md:block">Linkedin</p>
               <div className="icon">
-                <box-icon type="logo" name="linkedin" color="#242424" />
+                {/* <box-icon type="logo" name="linkedin" color="#242424" /> */}
               </div>
             </Link>
           </div>
@@ -64,7 +57,7 @@ function Header() {
             <Link href="https://github.com/nukucode" target="_blank">
               <p className="link hidden md:block">Github</p>
               <div className="icon">
-                <box-icon type="logo" name="github" color="#242424" />
+                {/* <box-icon type="logo" name="github" color="#242424" /> */}
               </div>
             </Link>
           </div>
@@ -73,7 +66,7 @@ function Header() {
             <Link href="https://x.com/nukucode" target="_blank">
               <p className="link hidden md:block">Twitter</p>
               <div className="icon">
-                <box-icon name="twitter" type="logo" color="#242424" />
+                {/* <box-icon name="twitter" type="logo" color="#242424" /> */}
               </div>
             </Link>
           </div>

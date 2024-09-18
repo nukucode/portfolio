@@ -20,11 +20,7 @@ function Footer() {
             <Link href="https://linkedin.com/in/nukucode" target="_blank">
               <p className="link hidden md:block">Linkedin</p>
               <div className="icon">
-                <box-icon
-                  type="logo"
-                  name="linkedin-square"
-                  color="#242424"
-                ></box-icon>
+                {/* <box-icon type="logo" name="linkedin-square" color="#242424" /> */}
               </div>
             </Link>
           </div>
@@ -33,7 +29,7 @@ function Footer() {
             <Link href="https://github.com/nukucode" target="_blank">
               <p className="link hidden md:block">Github</p>
               <div className="icon">
-                <box-icon type="logo" name="github" color="#242424" />
+                {/* <box-icon type="logo" name="github" color="#242424" /> */}
               </div>
             </Link>
           </div>
@@ -42,7 +38,7 @@ function Footer() {
             <Link href="https://x.com/nukucode" target="_blank">
               <p className="link hidden md:block">Twitter</p>
               <div className="icon">
-                <box-icon name="twitter" type="logo" color="#242424" />
+                {/* <box-icon name="twitter" type="logo" color="#242424" /> */}
               </div>
             </Link>
           </div>
