@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Footer from "./Footer";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 function Contact() {
   return (
@@ -20,8 +21,8 @@ function Contact() {
         </div>
         <div className="flex items-center space-x-3 pt-2">
           <Link className="button__div" href="mailto:whiteblueotaku@gmail.com">
-            <button className="button bg-black flex items-center justify-center space-x-2">
-              {/* <box-icon name="envelope" color="#ffffff" /> */}
+            <button className="button bg-black flex items-center justify-center space-x-1">
+              <EmailOutlinedIcon className="email__icon" />
               <span className="button__text text-white hover:underline transition-all ease-in">
                 Email Me
               </span>

@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Header() {
   const [copy, setCopy] = useState(false);
 
- 
   return (
     <header className="w-full flex items-center justify-center">
       <div className="min-w-[90%] pt-[40px] flex items-center justify-between ">
@@ -18,14 +19,11 @@ function Header() {
                 whiteblueotaku@gmail.com
               </p>
             </div>
-            <button
-             
-              className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full "
-            >
+            <button className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full ">
               <span className="font-otterco font-medium text-[12px] hidden md:block">
                 {!copy ? "Copy" : "Copied!"}
               </span>
-              <Link href={'mailto:whiteblue@gmail.com'}>
+              <Link href={"mailto:whiteblue@gmail.com"}>
                 <span className="font-otterco font-medium text-[12px] text-white md:hidden">
                   Email
                 </span>
@@ -48,7 +46,7 @@ function Header() {
             <Link href="https://linkedin.com/in/nukucode" target="_blank">
               <p className="link hidden md:block">Linkedin</p>
               <div className="icon">
-                {/* <box-icon type="logo" name="linkedin" color="#242424" /> */}
+                <LinkedInIcon color="#242424" />
               </div>
             </Link>
           </div>
@@ -57,16 +55,16 @@ function Header() {
             <Link href="https://github.com/nukucode" target="_blank">
               <p className="link hidden md:block">Github</p>
               <div className="icon">
-                {/* <box-icon type="logo" name="github" color="#242424" /> */}
+                <GitHubIcon color="#242424" />
               </div>
             </Link>
           </div>
           <span className="text-[14px] hidden md:block">/</span>
           <div>
-            <Link href="https://x.com/nukucode" target="_blank">
+            <Link href="https://instagram.com/blue.otakuu" target="_blank">
               <p className="link hidden md:block">Twitter</p>
               <div className="icon">
-                {/* <box-icon name="twitter" type="logo" color="#242424" /> */}
+                <InstagramIcon color="#242424" />
               </div>
             </Link>
           </div>

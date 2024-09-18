@@ -29,4 +29,9 @@
     .button__div .button .button__text {
         @apply font-otterco text-[12px]
     }
+    .email__icon{
+        color: white;
+        font-size: 15px;
+        margin-top: -1px;
+    }
 }
