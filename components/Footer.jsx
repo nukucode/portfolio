@@ -4,14 +4,14 @@ import Link from "next/link";
 import React from "react";
 
 function Footer() {
-  // const getFullYear = () => new Date().getFullYear();
+  const getFullYear = () => new Date().getFullYear();
   return (
     <footer className="flex items-center justify-center py-[3.5rem]">
       <div className="w-[90%] flex items-center justify-between border-gray border-t-[0.1px] pt-[2.5rem]">
         <div>
           <p className="font-otterco text-[14px] text-linkColor">
-            <span />{" "}
-            {2024} All rights reserved.
+            <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />{" "}
+            {getFullYear()} All rights reserved.
           </p>
         </div>
 

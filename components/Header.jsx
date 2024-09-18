@@ -7,7 +7,13 @@ import "boxicons";
 function Header() {
   const [copy, setCopy] = useState(false);
 
-  
+  const copyEmail = () => {
+    navigator.clipboard.writeText("whiteblueotaku@gmail.com");
+    setCopy(true);
+    setInterval(() => {
+      setCopy(false);
+    }, 3000);
+  };
 
   return (
     <header className="w-full flex items-center justify-center">
@@ -20,6 +26,7 @@ function Header() {
               </p>
             </div>
             <button
+              onClick={copyEmail}
               className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full "
             >
               <span className="font-otterco font-medium text-[12px] hidden md:block">
