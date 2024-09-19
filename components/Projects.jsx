@@ -37,7 +37,7 @@ function Projects() {
             video="https://cdn.dribbble.com/userupload/14421441/file/original-a55e397ad959514f1913e7bbb6f8ba30.mp4"
           />
         </div>
-        <div className="space-x-3">
+        <div className="space-x-3 hidden sm:block">
           <button
             onClick={() => {
               document.getElementById("projects").scrollLeft -= 800;
