@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Transition from '../components/Transition';
+
 
 //👇 Configure our local font object
 const ottercoFont = localFont({
@@ -63,7 +65,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ottercoFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Transition>
+          {children}
+        </Transition>
+      </body>
     </html>
   )
 }
