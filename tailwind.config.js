@@ -17,6 +17,8 @@ module.exports = {
         linkColor: "#373737",
         outlineColor: "#F1F0EF",
         borderColor: "#ECEBEA",
+        backgroundColor: "#EFEEED",
+        normalBackgroundColor: "#EEEEEE",
       },
       fontFamily: {
         otterco: ["var(--font-otterco)"],
