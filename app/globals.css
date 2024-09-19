@@ -8,6 +8,14 @@
     padding: 0;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 @layer components {
     .link {
@@ -22,14 +30,15 @@
         @apply border-4 border-borderColor rounded-full
     }
 
-    .button__div .button {
+    .button {
         @apply h-[52px] rounded-full w-[120px]
     }
 
-    .button__div .button .button__text {
+    .button__text {
         @apply font-otterco text-[12px]
     }
-    .email__icon{
+
+    .email__icon {
         color: white;
         font-size: 15px;
         margin-top: -1px;

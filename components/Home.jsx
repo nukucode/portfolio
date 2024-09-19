@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Img from ".././public/images/gojo.jpeg";
 import Header from "./Header";
 
 function Home() {
   return (
-    <section className="bg-[#F2F1F0] rounded-bl-[90px] h-[650px] sm:h-[742px] rounded-br-[90px]">
+    <section className=" bg-[#F8F8F8] rounded-bl-[90px] h-[650px] sm:h-[742px] rounded-br-[90px] drop-shadow-sm">
       <Header />
       <div className=" mt-[130px] md:mt-[90px] flex flex-col items-center justify-center space-y-4">
         <div className="relative">

@@ -7,7 +7,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 function Contact() {
   return (
-    <section className="bg-[#F8F8F8] mt-5 rounded-tl-[90px] rounded-tr-[90px] pt-[6rem]">
+    <section className="bg-[#F8F8F8] mt-5 rounded-tl-[90px] rounded-tr-[90px] pt-[6rem] drop-shadow-sm">
       <div className="flex items-center flex-col justify-center space-y-8">
         <div>
           <h3 className="font-otterco text-[20px] text-gray rotate-6">
@@ -30,7 +30,7 @@ function Contact() {
           </Link>
           <Link
             className="button__div"
-            href="https://wa.me/91+7427835521"
+            href="https://wa.me/7427835521"
             target="_blank"
           >
             <button className="button bg-white">

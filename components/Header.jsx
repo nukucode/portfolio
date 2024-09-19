@@ -9,17 +9,23 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 function Header() {
   const [copy, setCopy] = useState(false);
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("whiteblueotaku@gmail.com");
+    setCopy(true);
+    setTimeout(() => setCopy(false), 2000);
+  };
+
   return (
     <header className="w-full flex items-center justify-center">
       <div className="min-w-[90%] pt-[40px] flex items-center justify-between ">
         <div className="flex items-center space-x-2 md:space-x-4">
-          <div className="bg-borderColor rounded-full border-gray border-[0.01px] px-1 py-1 flex items-center md:space-x-4 h-[45px] sm:h-[55px]">
+          <div className="bg-borderColor rounded-full border-gray/20 border-[0.01px] px-1 py-1 flex items-center md:space-x-4 h-[45px] sm:h-[55px]">
             <div className="hidden md:block md:pl-3">
               <p className="  font-otterco font-regular text-[12px] text-gray">
                 whiteblueotaku@gmail.com
               </p>
             </div>
-            <button className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full ">
+            <button onClick={copyToClipboard} className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full ">
               <span className="font-otterco font-medium text-[12px] hidden md:block">
                 {!copy ? "Copy" : "Copied!"}
               </span>
