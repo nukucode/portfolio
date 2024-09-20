@@ -21,7 +21,7 @@
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.3.6",
     "caniuse-lite": "^1.0.30001660",
-    "firebase": "^9.9.3",
+    "firebase": "^10.13.2",
     "framer-motion": "^7.2.1",
     "groq": "^2.29.3",
     "next": "13",
