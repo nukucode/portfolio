@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import Img from ".././public/images/gojo.jpeg";
+import Img from ".././public/images/gojo1.jpeg";
 import Header from "./Header";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
@@ -20,14 +21,21 @@ function Home() {
               height={164}
               quality={100}
               alt="Picture of the author"
-              className="rounded-full grayscale"
+              className="rounded-full w-full h-full object-cover grayscale"
             />
           </div>
-          <div className="absolute top-[40px] -right-[100px] -rotate-[10deg] bg-white rounded-full w-fit px-6 py-4">
+          <motion.div
+            animate={{
+              y: [20, 0, 0, 20],
+              rotate: ["-6deg", "-6deg"],
+            }}
+            transition={{ repeat: Infinity, duration: 5, repeatDelay: 0.1 }}
+            className="absolute top-[25px] -right-[95px] border-gray/10 border-[0.1px] -rotate-[10deg] bg-white rounded-full w-fit px-6 py-4"
+          >
             <p className="font-otterco font-regular text-[12px]">
               Ankit Yadav 👋🏻
             </p>
-          </div>
+          </motion.div>
         </div>
         <div>
           <h1 className="font-otterco font-medium leading-[44px] sm:leading-[64px] text-[2.3rem] sm:text-[3.5rem] text-center from-black to-[#585757] bg-gradient-to-r bg-clip-text text-transparent">

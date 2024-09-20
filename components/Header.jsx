@@ -68,7 +68,7 @@ function Header() {
           <span className="text-[14px] hidden md:block">/</span>
           <div>
             <Link href="https://instagram.com/blue.otakuu" target="_blank">
-              <p className="link hidden md:block">Twitter</p>
+              <p className="link hidden md:block">Instagram</p>
               <div className="icon">
                 <InstagramIcon color="#242424" />
               </div>

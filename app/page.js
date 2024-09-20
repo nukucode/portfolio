@@ -2,14 +2,14 @@ import React from "react";
 import Home from "../components/Home";
 import Contact from "../components/Contact";
 import { Projects } from "../components/Projects";
-import { Blogs } from "../components/Blogs";
+import { Articles } from "../components/Articles";
 
 function Index() {
   return (
     <div className="bg-backgroundColor">
       <Home />
       <Projects />
-      <Blogs />
+      <Articles />
       <Contact />
     </div>
   );
