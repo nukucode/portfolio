@@ -1,16 +1,14 @@
+"use client";
+
 import React from "react";
 import { Article } from "./Artical";
+import { Title } from "./Title";
 
 function Articles() {
   return (
     <section className="w-full my-[100px] flex items-center justify-center">
       <div className="w-full flex items-center justify-center flex-col space-y-[5rem]">
-        <div className="w-full relative flex justify-center items-center">
-          <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] border-gray/30 border-t-[0.1px] w-[90%] " />
-          <h3 className="font-otterco text-[1.8rem] bg-buttonColor w-fit px-4 py-2 rounded-xl -rotate-[5deg] text-white">
-            📜 Read Articles
-          </h3>
-        </div>
+        <Title text="📜 Read Articles" rotate="-rotate-[2deg]" radius="lg" />
         <div className="space-y-4">
           <Article
             title="Unethical design of cookies windows"

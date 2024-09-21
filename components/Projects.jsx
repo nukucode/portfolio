@@ -5,6 +5,7 @@ import { Project } from "./Project";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { db } from "../firebase/config";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
+import { Title } from "./Title";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -29,12 +30,11 @@ function Projects() {
   return (
     <section className="w-full my-[80px] flex items-center justify-center">
       <div className="w-full flex items-center justify-center flex-col space-y-[4rem]">
-        <div className="w-full relative flex justify-center items-center">
-          <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] border-gray/30 border-t-[0.1px] w-[90%] " />
-          <h3 className="font-otterco text-[1.8rem] bg-buttonColor w-fit px-4 py-2 rounded-full rotate-[2deg] text-white">
-            💼 Latest Projects
-          </h3>
-        </div>
+        <Title
+          text="💼 Latest Projects"
+          rotate="rotate-[2deg]"
+          radius="full"
+        />
         <div
           id="projects"
           className="relative px-[1rem] sm:px-[15%] snap-x snap-mandatory no-scrollbar w-full sm:overflow-y-hidden flex items-center flex-col sm:flex-row sm:overflow-x-scroll space-y-5 sm:space-x-5"

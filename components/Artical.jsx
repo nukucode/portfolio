@@ -9,7 +9,7 @@ function Article({ title, description, category, date }) {
       <h4 className="font-otterco font-light uppercase text-[14px] tracking-widest">
         {category}
       </h4>
-      <Link href="/">
+      <Link href="/articles/fgd">
         <h2 className="font-otterco font-medium leading-[30px] text-[1.5rem] hover:underline">
           {title}
         </h2>
