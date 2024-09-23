@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import Img from ".././public/images/gojo1.jpeg";
+import Img from ".././public/images/gojo.jpeg";
 import Header from "./Header";
 import { motion } from "framer-motion";
 
