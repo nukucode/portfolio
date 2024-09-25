@@ -24,6 +24,7 @@
     "firebase": "^10.13.2",
     "framer-motion": "^7.2.1",
     "groq": "^2.29.3",
+    "locomotive-scroll": "^4.1.4",
     "next": "13",
     "next-seo": "^6.1.0",
     "node": "^22.9.0",
