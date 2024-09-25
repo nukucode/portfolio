@@ -25,7 +25,10 @@ function Header() {
                 whiteblueotaku@gmail.com
               </p>
             </div>
-            <button onClick={copyToClipboard} className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full ">
+            <button
+              onClick={copyToClipboard}
+              className="bg-black md:bg-white rounded-full h-full  px-6 sm:px-9 w-full "
+            >
               <span className="font-otterco font-medium text-[12px] hidden md:block">
                 {!copy ? "Copy" : "Copied!"}
               </span>
@@ -56,7 +59,7 @@ function Header() {
               </div>
             </Link>
           </div>
-          <span className="text-[14px] hidden md:block">/</span>
+          <span className="text-[14px] hidden md:block -mt-[2px]">/</span>
           <div>
             <Link href="https://github.com/nukucode" target="_blank">
               <p className="link hidden md:block">Github</p>
@@ -65,9 +68,9 @@ function Header() {
               </div>
             </Link>
           </div>
-          <span className="text-[14px] hidden md:block">/</span>
+          <span className="text-[14px] hidden md:block -mt-[2px]">/</span>
           <div>
-            <Link href="https://instagram.com/blue.otakuu" target="_blank">
+            <Link href="https://instagram.com/katomekichii" target="_blank">
               <p className="link hidden md:block">Instagram</p>
               <div className="icon">
                 <InstagramIcon color="#242424" />

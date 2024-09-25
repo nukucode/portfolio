@@ -1,15 +1,13 @@
 import React from "react";
 import Home from "../components/Home";
 import Contact from "../components/Contact";
-import { Projects } from "../components/Projects";
-import { Articles } from "../components/Articles";
+import Services from "../components/Services";
 
 function Index() {
   return (
-    <div className="bg-backgroundColor">
+    <div className="bg-backgroundColor page">
       <Home />
-      <Projects />
-      <Articles />
+      <Services />
       <Contact />
     </div>
   );

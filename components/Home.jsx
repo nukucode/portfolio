@@ -43,7 +43,7 @@ function Home() {
           </h1>
         </div>
         <div className="pt-6">
-          <Link href="/projects">
+          <Link href="https://www.github.com/nukucode" target="_blank">
             <button className="bg-black h-[60px] min-w-[190px] flex items-center justify-center space-x-3 rounded-full">
               <span className="font-otterco text-[12px] text-white hover:underline transition-all duration-150 ease-in">
                 Latest Shorts
