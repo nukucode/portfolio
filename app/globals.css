@@ -8,11 +8,11 @@
     padding: 0;
 }
 
-.no-scrollbar::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
-.no-scrollbar {
+*::before, *::after {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -44,3 +44,4 @@
         margin-top: -1px;
     }
 }
+
