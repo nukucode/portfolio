@@ -2,46 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-*::before, *::after {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+*::before,
+*::after {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @layer components {
-    .link {
-        @apply font-otterco text-[14px] text-linkColor hover:underline transition-all duration-200 ease-in;
-    }
+  .link {
+    @apply font-otterco text-[14px] text-linkColor hover:underline transition-all duration-200 ease-in;
+  }
 
-    .icon {
-        @apply bg-white md:hidden w-[40px] h-[40px] sm:w-[47px] sm:h-[47px] rounded-full flex items-center justify-center border-borderColor border-[3px]
-    }
+  .icon {
+    @apply bg-white md:hidden w-[40px] h-[40px] sm:w-[47px] sm:h-[47px] rounded-full flex items-center justify-center border-borderColor border-[3px];
+  }
 
-    .button__div {
-        @apply border-4 border-borderColor rounded-full
-    }
+  .button__div {
+    @apply border-4 border-borderColor rounded-full;
+  }
 
-    .button {
-        @apply h-[52px] rounded-full w-[120px]
-    }
+  .button {
+    @apply h-[52px] rounded-full w-[120px];
+  }
 
-    .button__text {
-        @apply font-otterco text-[12px]
-    }
+  .button__text {
+    @apply font-otterco text-[12px];
+  }
 
-    .email__icon {
-        color: white;
-        font-size: 15px;
-        margin-top: -1px;
-    }
+  .email__icon {
+    color: white;
+    font-size: 15px;
+    margin-top: -1px;
+  }
+
+  .border-hover,
+  .hero-button-link {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .border-hover.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    bottom: 0;
+    right: 0;
+  }
+
+  .border-hover::before, 
+  .hero-button-link::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: #000;
+    bottom: 0;
+    right: 0;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+
+  .hero-button-link::before {
+    width: 100%;
+  }
+
+  .hero-button-link:hover::before{
+    width: 20%;
+  }
+
+  .border-hover:hover::before {
+    width: 100%;
+  }
 }
 
+.menu-link {
+  @apply font-otterco text-white text-[10vw] h-[25vw] flex items-center justify-start pl-10;
+}
+
+.border-below {
+  border-bottom: 1px solid gray;
+}

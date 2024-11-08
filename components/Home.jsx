@@ -1,18 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import Img from ".././public/images/gojo.jpeg";
 import Header from "./Header";
+import "../app/locomotive-scroll.css";
+import Img from "../public/images/gojo.jpeg";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <section className=" bg-[#F8F8F8] rounded-bl-[90px] h-[650px] sm:h-[742px] rounded-br-[90px] drop-shadow-sm">
+    <section className="relative bg-main h-screen">
       <Header />
-      <div className=" mt-[130px] md:mt-[90px] flex flex-col items-center justify-center space-y-4">
+      {/* Mid Section */}
+      <div className=" mt-[9rem] flex flex-col items-center justify-center space-y-4">
         <div className="relative">
           <div className="w-[130px] h-[130px] border-white border-4 rounded-full">
             <Image
@@ -39,19 +41,24 @@ function Home() {
         </div>
         <div>
           <h1 className="font-otterco font-medium leading-[44px] sm:leading-[64px] text-[2.3rem] sm:text-[3.5rem] text-center from-black to-[#585757] bg-gradient-to-r bg-clip-text text-transparent">
-            Building digital <br /> products, brands, and <br /> experience.
+            Building <span>digital</span> <br /> <span>products</span>, brands,
+            and <br /> <span>experience.</span>
           </h1>
         </div>
-        <div className="pt-6">
-          <Link href="https://www.github.com/nukucode" target="_blank">
-            <button className="bg-black h-[60px] min-w-[190px] flex items-center justify-center space-x-3 rounded-full">
-              <span className="font-otterco text-[12px] text-white hover:underline transition-all duration-150 ease-in">
-                Latest Shorts
-              </span>
-              <ArrowUpRightIcon className="h-[12px] text-white underline" />
-            </button>
-          </Link>
-        </div>
+
+        <h3 className="font-otterco text-[1.2rem] text-center">
+          Ready to Elevate Your Next{" "}
+          <span className="text-yellow-600 font-bold">Project?</span>
+          <br /> Let’s Build Something Extraordinary Together.
+        </h3>
+
+        <Link
+          href="/"
+          className="flex items-center justify-between mt-[1rem] min-w-[230px] hero-button-link transition-all ease-in-out duration-300 hover:text-[#1db954]"
+        >
+          <span className=" text-[1.8rem]  font-otterco ">Explore Plans</span>
+          <ArrowUpRightIcon className="h-6 w-6 " />
+        </Link>
       </div>
     </section>
   );
