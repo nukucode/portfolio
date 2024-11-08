@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        main: "#E6E7DF",
         black: "#1C1C1C",
         gray: "#565655",
         white: "#FFFFFF",
@@ -22,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         otterco: ["var(--font-otterco)"],
+        founders: ["var(--font-founders)"],
       },
     },
   },
